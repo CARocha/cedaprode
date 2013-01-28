@@ -24,7 +24,7 @@ def inicio(request):
 @checar_permiso
 def llenar_encuesta(request, encuesta_id):
     encuesta = get_object_or_404(Encuesta, pk = encuesta_id)
-    preguntas = Pregunta.objects.all()
+    
     adjuntos = Adjunto.objects.filter(encuesta__id=encuesta_id)
     PreguntaInlineFormSet = inlineformset_factory(Encuesta, Respuesta,
                                                   form=RespuestaInlineForm,
