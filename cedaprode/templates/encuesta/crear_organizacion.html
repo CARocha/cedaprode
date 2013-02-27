@@ -1,5 +1,15 @@
 {%extends "base2.html"%}
 {%block title%}Formulario{%endblock%}
+{%block extra_head%}
+<link rel="stylesheet" href="/files/css/chosen.css">
+<script src="/files/js/chosen.jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+  jQuery(document).ready(function(){
+  jQuery(".chosen").chosen();
+}); 
+</script>
+
+{%endblock%}
 {%block content%}
 <div  style="padding:15px;">
 <form action="." method="POST" accept-charset="utf-8">

@@ -2,7 +2,6 @@
 from django.db import models
 from django.contrib.auth.models import User
 from django.db.models import Sum
-#from thumbs import ImageWithThumbsField
 
 from lugar.models import Municipio
 
@@ -17,7 +16,6 @@ class Organizacion(models.Model):
     creado_por = models.ForeignKey(User)
     fecha_creacion = models.DateTimeField(auto_now_add=True)
     municipio = models.ForeignKey(Municipio)
-    #logo = ImageWithThumbsField(upload_to = 'logos', sizes = ((100, 100))) 
 
     class Meta:
         verbose_name_plural = 'Organizaciones'

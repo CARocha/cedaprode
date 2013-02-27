@@ -143,6 +143,7 @@ label{
 }
 
 #agregar input{
+    margin: 10px;
     background:url(/files/imagen/guardar.jpg);
     width:115px;
     height:33px;
