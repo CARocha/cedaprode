@@ -1,6 +1,8 @@
 from django import forms
 from django.contrib.auth.models import User
 from models import * 
+from django.forms.extras.widgets import SelectDateWidget
+import datetime
 
 class RespuestaInlineForm(forms.ModelForm):
     pregunta = forms.ModelChoiceField(queryset = Pregunta.objects.all(), 
@@ -26,15 +28,20 @@ class EncuestaForm(forms.ModelForm):
     class Meta:
         model = Encuesta
 
+YEAR_CHOICES = ('2009','2010','2011', '2012', '2013','2014', '2015', '2016','2017', '2018', '2019')
+hoy = datetime.date.today()
+
 class OrganizacionForm(forms.ModelForm):
     creado_por = forms.ModelChoiceField(queryset = User.objects.all(),
                                      widget=forms.HiddenInput)
+    fecha_fundacion = forms.DateField(label="Fecha fundacion",widget=SelectDateWidget(years=YEAR_CHOICES), initial=hoy)
 
     class Meta:
         model = Organizacion
         widgets = {    
             'municipio' : forms.Select(attrs={'class':'chosen'})
             }
+
 class BuscarForm(forms.Form):
     municipio = forms.ModelChoiceField(queryset = Municipio.objects.all(), required=False)
     tipo = forms.ChoiceField(choices = TIPOS_ORG, required=False)

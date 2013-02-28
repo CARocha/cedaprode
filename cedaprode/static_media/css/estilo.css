@@ -105,8 +105,10 @@ h2{
 
 /* Para formularios */
 
-#id_username, #id_password, #id_nombre, #id_tipo, #id_municipio, #id_organizacion{
-    width:450px;
+#id_username, #id_password, #id_nombre, #id_tipo, #id_municipio, 
+#id_organizacion, #id_representante, #id_celular_repre, #id_correo_repre,
+#id_gerente, #id_celular_gerente, #id_correo_gerente{
+    width:400px;
     font-size:16px;
     background:#fff url(/files/imagen/fondotextfield.png) repeat-x;
     background-position: top left;
@@ -123,7 +125,7 @@ h2{
 #id_pais{width:300px;}
 
  #id_descripcion{
-    width:450px;
+    width:400px;
     font-size:16px;
     background:#fff url(/files/imagen/fondotextfield.png) repeat-x;
     background-position: top left;

@@ -5,9 +5,13 @@ from django.db.models import Sum
 
 from lugar.models import Municipio
 
-TIPOS_ORG = (('1', 'Alcaldía'), ('2', 'Sociedad civil'),
-            ('3', 'Gremios'), ('4', 'Instituciones del estado'), 
-            ('5', 'Empresa'))
+TIPOS_ORG = (
+             ('1', 'Alcaldía'), 
+             ('2', 'Sociedad civil'),
+             ('3', 'Gremios'), 
+             ('4', 'Instituciones del estado'), 
+             ('5', 'Empresa')
+            )
 
 class Organizacion(models.Model):
     nombre = models.CharField(max_length=100)
@@ -16,6 +20,13 @@ class Organizacion(models.Model):
     creado_por = models.ForeignKey(User)
     fecha_creacion = models.DateTimeField(auto_now_add=True)
     municipio = models.ForeignKey(Municipio)
+    representante = models.CharField('Representante legal', max_length=100)
+    celular_repre = models.CharField('Celular', max_length=100, null=True, blank=True)
+    correo_repre = models.CharField('Correo', max_length=100, null=True, blank=True)
+    gerente = models.CharField(max_length=100, null=True, blank=True)
+    celular_gerente = models.CharField('Celular', max_length=100, null=True, blank=True)
+    correo_gerente = models.CharField('Correo', max_length=100, null=True, blank=True)
+    fecha_fundacion = models.DateField()
 
     class Meta:
         verbose_name_plural = 'Organizaciones'
@@ -105,3 +116,7 @@ class Respuesta(models.Model):
         else:
             return '%s - Sin responder(%s)' % (self.pregunta.titulo, 
                     self.encuesta.usuario.username)
+            
+#modelo nuevo para acicafoc
+class ExtraInformacion(models.Model):
+    pass
