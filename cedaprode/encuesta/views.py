@@ -32,16 +32,30 @@ def llenar_encuesta(request, encuesta_id):
                                                   max_num=0)
     if request.method == 'POST':
         formset = PreguntaInlineFormSet(request.POST, request.FILES, instance = encuesta)
-        if formset.is_valid():
+        forma1 = ExtraInformacionForm(request.POST)
+        forma2 = RubrosManejadosForm(request.POST)
+        forma3 = FrecuenciaInfoForm(request.POST)
+        if formset.is_valid() and forma1.is_valid() and forma2.is_valid() and forma3.is_valid():
             formset.save()
+            forma1.save()
+            forma2.save()
+            forma3.save()
             return redirect('mis-encuestas')
-        else:
-            formset = PreguntaInlineFormSet(request.POST, instance = encuesta)
+        # else:
+        #     formset = PreguntaInlineFormSet(request.POST, instance = encuesta)
+        #     forma1 = ExtraInformacionForm()
+        #     forma2 = RubrosManejadosForm()
+        #     forma3 = FrecuenciaInfoForm()
     else:
         formset = PreguntaInlineFormSet(instance=encuesta)
+        forma1 = ExtraInformacionForm()
+        forma2 = RubrosManejadosForm()
+        forma3 = FrecuenciaInfoForm()
     return render_to_response('encuesta/llenar_encuesta.html',
-            {'formset': formset, 'encuesta': encuesta.id,'adjuntos':adjuntos},
-            context_instance=RequestContext(request))
+                    {'formset': formset, 'encuesta': encuesta.id,
+                     'adjuntos':adjuntos, 'forma1':forma1, 
+                     'forma2':forma2, 'forma3':forma3},
+                    context_instance=RequestContext(request))
 
 @login_required
 def crear_encuesta(request):

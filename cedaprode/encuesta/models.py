@@ -116,7 +116,66 @@ class Respuesta(models.Model):
         else:
             return '%s - Sin responder(%s)' % (self.pregunta.titulo, 
                     self.encuesta.usuario.username)
-            
+
 #modelo nuevo para acicafoc
+CHOICE_INTEGRADAS = (
+                        (1, "Asamblea"),
+                        (2, "Junta directiva"),
+                        (3, "Junta de vigilancia"),
+                        (4, "Comisión de formación"),
+                        (5, "Comisión de género"),
+                        (6, "Gerencia"),
+                        (7, "Empleados")
+                    )
+
+CHOICE_FRECUENCIA = (
+                        (1, "Semanal"),
+                        (2, "Mensual"),
+                        (3, "Bimensual"),
+                        (4, "Trimestral"),
+                        (5, "Semestral"),
+                        (6, "Anual")
+                    )
+
+CHOICE_INTEGRADAS_FRECUENCIA = (
+                        (1, "Sesiones de asamblea"),
+                        (2, "Sesiones de junta directiva"),
+                        (3, "Sesiones de junta de vigilancia"),
+                        (4, "Sesiones de comisión de formación"),
+                        (5, "Sesiones de comisión de género")
+                    )
+
 class ExtraInformacion(models.Model):
-    pass
+    encuesta = models.ForeignKey(Encuesta)
+    integradas = models.IntegerField(choices=CHOICE_INTEGRADAS, null=True, blank=True)
+    hombres = models.IntegerField(null=True, blank=True)
+    mujeres = models.IntegerField(null=True, blank=True)
+
+    def __unicode__(self):
+        return u'%' % str(self.get_integradas_display())
+
+    class Meta:
+        verbose_name_plural = "Extra información"
+
+class RubrosManejados(models.Model):
+    encuesta = models.ForeignKey(Encuesta)
+    rubros = models.TextField('Rubros Manejados', null=True, blank=True)
+    volumen_global = models.FloatField(null=True, blank=True)
+    volumen_cacao = models.FloatField(null=True, blank=True)
+
+    def __unicode__(self):
+        return u'%s - %s' % (str(self.volumen_global),str(self.volumen_cacao))
+
+    class Meta:
+        verbose_name_plural = "Rubros manejados"
+
+class FrecuenciaInfo(models.Model):
+    encuesta = models.ForeignKey(Encuesta)
+    tipos = models.IntegerField(choices=CHOICE_INTEGRADAS_FRECUENCIA)
+    respuesta = models.IntegerField(choices=CHOICE_FRECUENCIA)
+
+    def __unicode__(self):
+        return u'%s - %s' % (str(self.get_tipos_display()), str(self.get_respuesta_display()))
+
+    class Meta:
+        verbose_name_plural = "Frecuencia Info"

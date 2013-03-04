@@ -1,4 +1,5 @@
 from django.conf.urls.defaults import patterns, include, url
+#from django.views.generic.simple import direct_to_template
 
 from django.contrib import admin
 admin.autodiscover()
@@ -11,6 +12,7 @@ urlpatterns = patterns('',
     url(r'^accounts/login/$', 'django.contrib.auth.views.login', name='user-login'),
     url(r'^accounts/logout/$', 'django.contrib.auth.views.logout', {'template_name': 'registration/logout.html'}, name='user-logout'),
     url(r'^', include('cedaprode.encuesta.urls')),
+    #url(r'^ejemplo', direct_to_template, {'template': 'encuesta/prueba.html'}),
 )
 
 if settings.DEBUG:

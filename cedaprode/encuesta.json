@@ -1,0 +1,2027 @@
+[
+    {
+        "pk": 1, 
+        "model": "encuesta.categoria", 
+        "fields": {
+            "descripcion": "Visi\u00f3n y Misi\u00f3n de la Cooperativa ", 
+            "titulo": "A. Visi\u00f3n y Misi\u00f3n de la Cooperativa "
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "encuesta.categoria", 
+        "fields": {
+            "descripcion": "Desarrollo organizacional", 
+            "titulo": "B. Desarrollo organizacional"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "encuesta.categoria", 
+        "fields": {
+            "descripcion": "Funcionamiento organizacional", 
+            "titulo": "C. Funcionamiento organizacional"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "encuesta.categoria", 
+        "fields": {
+            "descripcion": "Manejo de recursos financieros", 
+            "titulo": "D. Manejo de recursos financieros"
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "encuesta.categoria", 
+        "fields": {
+            "descripcion": "Desarrollo de relaciones", 
+            "titulo": "E. Desarrollo de relaciones"
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "encuesta.categoria", 
+        "fields": {
+            "descripcion": "Desempe\u00f1o en la gesti\u00f3n y ejecuci\u00f3n de sub-proyectos", 
+            "titulo": "F. Desempe\u00f1o en la gesti\u00f3n y ejecuci\u00f3n de sub-proyectos"
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "encuesta.categoria", 
+        "fields": {
+            "descripcion": "Desarrollo de Capacidad", 
+            "titulo": "G. Desarrollo de Capacidad"
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "encuesta.categoria", 
+        "fields": {
+            "descripcion": "Manejo de recursos humanos de la Cooperativa", 
+            "titulo": "H. Manejo de recursos humanos de la Cooperativa"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "encuesta.pregunta", 
+        "fields": {
+            "categoria": 1, 
+            "titulo": "A1: Misi\u00f3n de la Cooperativa"
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "encuesta.pregunta", 
+        "fields": {
+            "categoria": 1, 
+            "titulo": "A2: Visi\u00f3n de la Cooperativa"
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "encuesta.pregunta", 
+        "fields": {
+            "categoria": 1, 
+            "titulo": "A3: Planificaci\u00f3n Estrat\u00e9gica (PE)"
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "encuesta.pregunta", 
+        "fields": {
+            "categoria": 1, 
+            "titulo": "A4: Planificaci\u00f3n Operativa anual  (POA)"
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "encuesta.pregunta", 
+        "fields": {
+            "categoria": 1, 
+            "titulo": "A5: Evaluaci\u00f3n del Impacto ( Logros de la Misi\u00f3n)"
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "encuesta.pregunta", 
+        "fields": {
+            "categoria": 2, 
+            "titulo": "B1: Estado legal de la cooperativa"
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "encuesta.pregunta", 
+        "fields": {
+            "categoria": 2, 
+            "titulo": "B2: El capital social de la cooperativa"
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "encuesta.pregunta", 
+        "fields": {
+            "categoria": 2, 
+            "titulo": "B3: Funcionamiento de gerencia y equipo t\u00e9cnico"
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "encuesta.pregunta", 
+        "fields": {
+            "categoria": 2, 
+            "titulo": "B4: Comunicaci\u00f3n Internas"
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "encuesta.pregunta", 
+        "fields": {
+            "categoria": 2, 
+            "titulo": "B5: Pol\u00edticas y Procedimientos"
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "encuesta.pregunta", 
+        "fields": {
+            "categoria": 3, 
+            "titulo": "C1: Las estructuras de la cooperativa"
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "encuesta.pregunta", 
+        "fields": {
+            "categoria": 3, 
+            "titulo": "C2: Papel de Consejo de Direcci\u00f3n"
+        }
+    }, 
+    {
+        "pk": 13, 
+        "model": "encuesta.pregunta", 
+        "fields": {
+            "categoria": 3, 
+            "titulo": "C3: Papel de junta de vigilancia"
+        }
+    }, 
+    {
+        "pk": 14, 
+        "model": "encuesta.pregunta", 
+        "fields": {
+            "categoria": 3, 
+            "titulo": "C4: Papel de asamblea"
+        }
+    }, 
+    {
+        "pk": 15, 
+        "model": "encuesta.pregunta", 
+        "fields": {
+            "categoria": 3, 
+            "titulo": "C5: Funcionamiento de las estructuras"
+        }
+    }, 
+    {
+        "pk": 16, 
+        "model": "encuesta.pregunta", 
+        "fields": {
+            "categoria": 4, 
+            "titulo": "D1: Sistema de Contabilidad"
+        }
+    }, 
+    {
+        "pk": 17, 
+        "model": "encuesta.pregunta", 
+        "fields": {
+            "categoria": 4, 
+            "titulo": "D2: Informaci\u00f3n Financiera "
+        }
+    }, 
+    {
+        "pk": 18, 
+        "model": "encuesta.pregunta", 
+        "fields": {
+            "categoria": 4, 
+            "titulo": "D3: Flujo de Caja"
+        }
+    }, 
+    {
+        "pk": 19, 
+        "model": "encuesta.pregunta", 
+        "fields": {
+            "categoria": 4, 
+            "titulo": "D4: Inventario"
+        }
+    }, 
+    {
+        "pk": 20, 
+        "model": "encuesta.pregunta", 
+        "fields": {
+            "categoria": 4, 
+            "titulo": "D5: Auditoria "
+        }
+    }, 
+    {
+        "pk": 21, 
+        "model": "encuesta.pregunta", 
+        "fields": {
+            "categoria": 5, 
+            "titulo": "E1. Relaciones con las empresas "
+        }
+    }, 
+    {
+        "pk": 22, 
+        "model": "encuesta.pregunta", 
+        "fields": {
+            "categoria": 5, 
+            "titulo": "E2: Relaciones de Trabajo con Otras Organizaciones"
+        }
+    }, 
+    {
+        "pk": 23, 
+        "model": "encuesta.pregunta", 
+        "fields": {
+            "categoria": 5, 
+            "titulo": "E3: Relaciones con la comunidad"
+        }
+    }, 
+    {
+        "pk": 24, 
+        "model": "encuesta.pregunta", 
+        "fields": {
+            "categoria": 5, 
+            "titulo": "E4: Legitimidad para las comunidades"
+        }
+    }, 
+    {
+        "pk": 25, 
+        "model": "encuesta.pregunta", 
+        "fields": {
+            "categoria": 5, 
+            "titulo": "E5: Relaciones con el Gobierno local/territorial"
+        }
+    }, 
+    {
+        "pk": 26, 
+        "model": "encuesta.pregunta", 
+        "fields": {
+            "categoria": 6, 
+            "titulo": "F1: Elaboraci\u00f3n de propuestas"
+        }
+    }, 
+    {
+        "pk": 27, 
+        "model": "encuesta.pregunta", 
+        "fields": {
+            "categoria": 6, 
+            "titulo": "F2: Ejecuci\u00f3n de fondos"
+        }
+    }, 
+    {
+        "pk": 28, 
+        "model": "encuesta.pregunta", 
+        "fields": {
+            "categoria": 6, 
+            "titulo": "F3: Proceso de adquisici\u00f3n"
+        }
+    }, 
+    {
+        "pk": 29, 
+        "model": "encuesta.pregunta", 
+        "fields": {
+            "categoria": 6, 
+            "titulo": "F4: Elaboraci\u00f3n de informes t\u00e9cnicos"
+        }
+    }, 
+    {
+        "pk": 30, 
+        "model": "encuesta.pregunta", 
+        "fields": {
+            "categoria": 7, 
+            "titulo": "G1: Planificaci\u00f3n Financiera Estrat\u00e9gica"
+        }
+    }, 
+    {
+        "pk": 31, 
+        "model": "encuesta.pregunta", 
+        "fields": {
+            "categoria": 7, 
+            "titulo": "G2: Plan para la Obtenci\u00f3n de Fondos y el Desarrollo"
+        }
+    }, 
+    {
+        "pk": 32, 
+        "model": "encuesta.pregunta", 
+        "fields": {
+            "categoria": 7, 
+            "titulo": "G4 : Inversiones a Largo Plazo"
+        }
+    }, 
+    {
+        "pk": 33, 
+        "model": "encuesta.pregunta", 
+        "fields": {
+            "categoria": 7, 
+            "titulo": "G5: Diversificaci\u00f3n de las Fuentes de Financiamiento"
+        }
+    }, 
+    {
+        "pk": 34, 
+        "model": "encuesta.pregunta", 
+        "fields": {
+            "categoria": 8, 
+            "titulo": "H1: Procedimiento de Contrataci\u00f3n"
+        }
+    }, 
+    {
+        "pk": 35, 
+        "model": "encuesta.pregunta", 
+        "fields": {
+            "categoria": 8, 
+            "titulo": "H2: Desarrollo y Orientaci\u00f3n del Personal"
+        }
+    }, 
+    {
+        "pk": 36, 
+        "model": "encuesta.pregunta", 
+        "fields": {
+            "categoria": 8, 
+            "titulo": "H3: Evaluaci\u00f3n del Desempe\u00f1o"
+        }
+    }, 
+    {
+        "pk": 37, 
+        "model": "encuesta.pregunta", 
+        "fields": {
+            "categoria": 8, 
+            "titulo": "D4: Compensaci\u00f3n y beneficios competitivos y justos"
+        }
+    }, 
+    {
+        "pk": 1, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 1, 
+            "titulo": "Misi\u00f3n imprecisa no brinda orientaci\u00f3n para la cooperativa", 
+            "pregunta": 1
+        }
+    }, 
+    {
+        "pk": 2, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 2, 
+            "titulo": "Misi\u00f3n espec\u00edfica expresada prop\u00f3sito de la cooperativa", 
+            "pregunta": 1
+        }
+    }, 
+    {
+        "pk": 3, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 3, 
+            "titulo": "Misi\u00f3n espec\u00edfica ha sido articulada por el consejo directivo", 
+            "pregunta": 1
+        }
+    }, 
+    {
+        "pk": 4, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 4, 
+            "titulo": "Misi\u00f3n espec\u00edfica articulada por la asamblea", 
+            "pregunta": 1
+        }
+    }, 
+    {
+        "pk": 5, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 5, 
+            "titulo": "Misi\u00f3n conocida por el p\u00fablico y se revisa peri\u00f3dicamente", 
+            "pregunta": 1
+        }
+    }, 
+    {
+        "pk": 6, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 1, 
+            "titulo": "Visi\u00f3n imprecisa no brinda orientaci\u00f3n para la Cooperativa", 
+            "pregunta": 2
+        }
+    }, 
+    {
+        "pk": 7, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 2, 
+            "titulo": "Visi\u00f3n espec\u00edfica expresada prop\u00f3sito de la Cooperativa", 
+            "pregunta": 2
+        }
+    }, 
+    {
+        "pk": 8, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 3, 
+            "titulo": "Visi\u00f3n espec\u00edfica ha sido articulada por el consejo directivo", 
+            "pregunta": 2
+        }
+    }, 
+    {
+        "pk": 9, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 4, 
+            "titulo": "Visi\u00f3n espec\u00edfica articulada por la asamblea", 
+            "pregunta": 2
+        }
+    }, 
+    {
+        "pk": 10, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 5, 
+            "titulo": "Visi\u00f3n conocida por el p\u00fablico y se revisa peri\u00f3dicamente", 
+            "pregunta": 2
+        }
+    }, 
+    {
+        "pk": 11, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 1, 
+            "titulo": "No existe un Plan estrat\u00e9gico", 
+            "pregunta": 3
+        }
+    }, 
+    {
+        "pk": 12, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 2, 
+            "titulo": "PE no actualizado o en preparaci\u00f3n", 
+            "pregunta": 3
+        }
+    }, 
+    {
+        "pk": 13, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 3, 
+            "titulo": "Hay un PE y Personal esta familiarizado con el PE", 
+            "pregunta": 3
+        }
+    }, 
+    {
+        "pk": 14, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 4, 
+            "titulo": "Personal usa el PE, para presentar la cooperativa, elabora Programa , proyectos", 
+            "pregunta": 3
+        }
+    }, 
+    {
+        "pk": 15, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 5, 
+            "titulo": "Personal usa PE para elaborar POA, Presupuesto anual y plan financiero", 
+            "pregunta": 3
+        }
+    }, 
+    {
+        "pk": 16, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 1, 
+            "titulo": "No existen, no se elabora POA", 
+            "pregunta": 4
+        }
+    }, 
+    {
+        "pk": 17, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 2, 
+            "titulo": "Se ha elaborados POA's incompletos", 
+            "pregunta": 4
+        }
+    }, 
+    {
+        "pk": 18, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 3, 
+            "titulo": "Existe POA General con Gastos e Ingresos Anuales por proyecto", 
+            "pregunta": 4
+        }
+    }, 
+    {
+        "pk": 19, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 4, 
+            "titulo": "Existe POA con gastos e Ingresos  para la Cooperativa para una A\u00f1o", 
+            "pregunta": 4
+        }
+    }, 
+    {
+        "pk": 20, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 5, 
+            "titulo": "Existe un POA multi-anual con gastos e Ingresos Anuales para varios a\u00f1os", 
+            "pregunta": 4
+        }
+    }, 
+    {
+        "pk": 21, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 1, 
+            "titulo": "El consejo directivo y personal no realiza acciones de evaluaci\u00f3n ", 
+            "pregunta": 5
+        }
+    }, 
+    {
+        "pk": 22, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 2, 
+            "titulo": "El consejo directivo y personal eval\u00faan algunos Programas y Proyectos", 
+            "pregunta": 5
+        }
+    }, 
+    {
+        "pk": 23, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 3, 
+            "titulo": "El consejo directivo y Personal Eval\u00faan ocasionalmente el Alcance de la Misi\u00f3n", 
+            "pregunta": 5
+        }
+    }, 
+    {
+        "pk": 24, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 4, 
+            "titulo": "El consejo directivo y Personal Eval\u00faan Peri\u00f3dicamente la Misi\u00f3n basado en PE", 
+            "pregunta": 5
+        }
+    }, 
+    {
+        "pk": 25, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 5, 
+            "titulo": "El consejo, la asambleas y el Personal Eval\u00faan Peri\u00f3dicamente la Misi\u00f3n basado en PE", 
+            "pregunta": 5
+        }
+    }, 
+    {
+        "pk": 26, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 1, 
+            "titulo": "Se ha organizado los socios y han recibido las capacitaciones de coperativismo", 
+            "pregunta": 6
+        }
+    }, 
+    {
+        "pk": 27, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 2, 
+            "titulo": "Se ha formado la cooperativa y se ha inscrito en INFOCOOP", 
+            "pregunta": 6
+        }
+    }, 
+    {
+        "pk": 28, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 3, 
+            "titulo": "Se ha recibido la documentaci\u00f3n y hay vigencia de certificaci\u00f3n legal por parte de INFOCOOP que incluye los socios y Consejo directivo", 
+            "pregunta": 6
+        }
+    }, 
+    {
+        "pk": 29, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 4, 
+            "titulo": "Se ha realizado gestiones necesarias para poder mantener la certificaci\u00f3n legal por parte de INFOCOOP durante los \u00faltimos 2 a\u00f1os", 
+            "pregunta": 6
+        }
+    }, 
+    {
+        "pk": 30, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 5, 
+            "titulo": "Se ha realizado gestiones necesarias para poder mantener la certificaci\u00f3n legal por parte de INFOCOOP durante los \u00faltimos a\u00f1os", 
+            "pregunta": 6
+        }
+    }, 
+    {
+        "pk": 31, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 1, 
+            "titulo": "Existe un capital social m\u00ednimo requerido por la ley", 
+            "pregunta": 7
+        }
+    }, 
+    {
+        "pk": 32, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 2, 
+            "titulo": "El capital social ha aumentado por los aportes de los socios ", 
+            "pregunta": 7
+        }
+    }, 
+    {
+        "pk": 33, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 3, 
+            "titulo": "El capital social ha aumentado por los aportes de los socios y aportes externos", 
+            "pregunta": 7
+        }
+    }, 
+    {
+        "pk": 34, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 4, 
+            "titulo": "Hay un plan para manejo de capital social que permite crecimiento permanente", 
+            "pregunta": 7
+        }
+    }, 
+    {
+        "pk": 35, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 5, 
+            "titulo": "Hay un plan de inversi\u00f3n de la cooperativa que contempla uso de capital social", 
+            "pregunta": 7
+        }
+    }, 
+    {
+        "pk": 36, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 1, 
+            "titulo": "No Existe gerencia o equipo t\u00e9cnico", 
+            "pregunta": 8
+        }
+    }, 
+    {
+        "pk": 37, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 2, 
+            "titulo": "Hay una gerencia que responde a un proyecto u no a  la cooperativa", 
+            "pregunta": 8
+        }
+    }, 
+    {
+        "pk": 38, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 3, 
+            "titulo": "Hay una gerencia que maneja proyectos y responde a la cooperativa", 
+            "pregunta": 8
+        }
+    }, 
+    {
+        "pk": 39, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 4, 
+            "titulo": "Hay una gerencia para las actividades de la cooperativa pagado con fondos propios de la \tcooperativa", 
+            "pregunta": 8
+        }
+    }, 
+    {
+        "pk": 40, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 5, 
+            "titulo": "Hay una gerencia y equipo t\u00e9cnico que apoyan a las actividades de la cooperativa pagado con fondos propios de la cooperativa", 
+            "pregunta": 8
+        }
+    }, 
+    {
+        "pk": 41, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 1, 
+            "titulo": "No Existen Canales Formales de Comunicaci\u00f3n, s\u00f3lo Comunicaciones Informales Internas", 
+            "pregunta": 9
+        }
+    }, 
+    {
+        "pk": 42, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 2, 
+            "titulo": "Existen Algunos Canales Formales de Comunicaci\u00f3n. Documentan por Escrito Algunas \tInformaciones Importantes", 
+            "pregunta": 9
+        }
+    }, 
+    {
+        "pk": 43, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 3, 
+            "titulo": "Documentan y Distribuye por Escrito la Mayor\u00eda de la Informaci\u00f3n Pertinente", 
+            "pregunta": 9
+        }
+    }, 
+    {
+        "pk": 44, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 4, 
+            "titulo": "Existen Canales de Comunicaci\u00f3n Formal, Informaci\u00f3n Pertinente es Documentada y Distribuida con Regularidad", 
+            "pregunta": 9
+        }
+    }, 
+    {
+        "pk": 45, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 5, 
+            "titulo": "Existen Canales de Comunicaci\u00f3n Formal que Facilitan la Visi\u00f3n de Largo Alcance", 
+            "pregunta": 9
+        }
+    }, 
+    {
+        "pk": 46, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 1, 
+            "titulo": "No Existen Reglamentos y Manual de funcionamiento", 
+            "pregunta": 10
+        }
+    }, 
+    {
+        "pk": 47, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 2, 
+            "titulo": "Hay manual de funcionamiento pero los procedimientos son informales y no se implementa el manual de funcionamiento", 
+            "pregunta": 10
+        }
+    }, 
+    {
+        "pk": 48, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 3, 
+            "titulo": "Se implementa el manual de funcionamiento pero no hay conocimiento de personal sobre los procedimientos", 
+            "pregunta": 10
+        }
+    }, 
+    {
+        "pk": 49, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 4, 
+            "titulo": "Se utiliza el Manual de Operaciones y elPersonal est\u00e1 Familiarizado con el Manual y Sabe como Usarlo", 
+            "pregunta": 10
+        }
+    }, 
+    {
+        "pk": 50, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 5, 
+            "titulo": "El manual de funcionamiento es la base de sistema administrativo contables y es revisado \tfrecuentemente para asegurar una buena marcha de la cooperativa", 
+            "pregunta": 10
+        }
+    }, 
+    {
+        "pk": 51, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 1, 
+            "titulo": "Hay una asamblea de socios y socias conformado seg\u00fan la ley de cooperativa", 
+            "pregunta": 11
+        }
+    }, 
+    {
+        "pk": 52, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 2, 
+            "titulo": "Hay un consejo de direcci\u00f3n nombrado por la asamblea o auto-nombrado", 
+            "pregunta": 11
+        }
+    }, 
+    {
+        "pk": 53, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 3, 
+            "titulo": "Hay un consejo de direcci\u00f3n elegido por la asamblea con mano alzado", 
+            "pregunta": 11
+        }
+    }, 
+    {
+        "pk": 54, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 4, 
+            "titulo": "Hay un Consejo de direcci\u00f3n elegido con voto secreto y hay elecciones peri\u00f3dicas", 
+            "pregunta": 11
+        }
+    }, 
+    {
+        "pk": 55, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 5, 
+            "titulo": "Junta de vigilancia est\u00e1 activa y da seguimiento de desarrollo de trabajo de consejo y la asamblea", 
+            "pregunta": 11
+        }
+    }, 
+    {
+        "pk": 56, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 1, 
+            "titulo": "Inactiva, no Orienta ni busca recursos para desarrollar el trabajo", 
+            "pregunta": 12
+        }
+    }, 
+    {
+        "pk": 57, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 2, 
+            "titulo": "Peque\u00f1a Parte de la CD aportan Tiempo y Esfuerzo para trabajo de la Cooperativa", 
+            "pregunta": 12
+        }
+    }, 
+    {
+        "pk": 58, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 3, 
+            "titulo": "Algunos de la CD ejercen liderazgo y aportan para el desarrollo de la Cooperativa", 
+            "pregunta": 12
+        }
+    }, 
+    {
+        "pk": 59, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 4, 
+            "titulo": "Mayor\u00eda de CD aportan Tiempo y Esfuerzo para trabajo de la Cooperativa", 
+            "pregunta": 12
+        }
+    }, 
+    {
+        "pk": 60, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 5, 
+            "titulo": "El CD tiene representaci\u00f3n de todos los sectores, mujeres, j\u00f3venes y  Gobierna el Futuro de la Cooperativa brinda Estabilidad Institucional y Financiera a largo plazo", 
+            "pregunta": 12
+        }
+    }, 
+    {
+        "pk": 61, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 1, 
+            "titulo": "Inactiva, no desarrolla su trabajo", 
+            "pregunta": 13
+        }
+    }, 
+    {
+        "pk": 62, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 2, 
+            "titulo": "Peque\u00f1a Parte de la JV aportan Tiempo y Esfuerzo para el trabajo", 
+            "pregunta": 13
+        }
+    }, 
+    {
+        "pk": 63, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 3, 
+            "titulo": "Algunos de la JV aportan tiempo y esfuerzo para el trabajo", 
+            "pregunta": 13
+        }
+    }, 
+    {
+        "pk": 64, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 4, 
+            "titulo": "Mayor\u00eda de JV aportan Tiempo y Esfuerzo para trabajo de la Cooperativa", 
+            "pregunta": 13
+        }
+    }, 
+    {
+        "pk": 65, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 5, 
+            "titulo": "La JV tiene contactos permanente con los socios y da seguimiento de trabajo del consejo y la cooperativa", 
+            "pregunta": 13
+        }
+    }, 
+    {
+        "pk": 66, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 1, 
+            "titulo": "Los socios act\u00faan como beneficiarios y no son activos en la vida organizativa", 
+            "pregunta": 14
+        }
+    }, 
+    {
+        "pk": 67, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 2, 
+            "titulo": "Peque\u00f1a Parte de los socios y socias la incorporan activamente en las asambleas", 
+            "pregunta": 14
+        }
+    }, 
+    {
+        "pk": 68, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 3, 
+            "titulo": "Algunos de de los socios y socias la incorporan activamente en las asambleas", 
+            "pregunta": 14
+        }
+    }, 
+    {
+        "pk": 69, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 4, 
+            "titulo": "Mayor\u00eda de de los socios y socias la incorporan activamente en las asambleas", 
+            "pregunta": 14
+        }
+    }, 
+    {
+        "pk": 70, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 5, 
+            "titulo": "Los socios se informas y participan activamente de toma de decisiones dando seguimientos de los acuerdos tomados en las asambleas", 
+            "pregunta": 14
+        }
+    }, 
+    {
+        "pk": 71, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 1, 
+            "titulo": "El consejo se re\u00fane solamente para cumplir con el mandato de la ley y no dirige la cooperativa", 
+            "pregunta": 15
+        }
+    }, 
+    {
+        "pk": 72, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 2, 
+            "titulo": "El consejo no  se re\u00fane para cumplir el mandato y cuando hay una emergencia y no dirige", 
+            "pregunta": 15
+        }
+    }, 
+    {
+        "pk": 73, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 3, 
+            "titulo": "El consejo directivo sesiona en forma regular y eficientemente, levanta actas de cada sesi\u00f3n", 
+            "pregunta": 15
+        }
+    }, 
+    {
+        "pk": 74, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 4, 
+            "titulo": "En consejo directivo provee liderazgo para la cooperativa toma decisiones, convoca la asamblea para informar pero no consultar, la junta de vigilancia no activa", 
+            "pregunta": 15
+        }
+    }, 
+    {
+        "pk": 75, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 5, 
+            "titulo": "En consejo directivo provee liderazgo para la cooperativa toma decisiones , convoca, informa y consulta a la asamblea, la junta de vigilancia esta activa", 
+            "pregunta": 15
+        }
+    }, 
+    {
+        "pk": 76, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 1, 
+            "titulo": "Contabilidad por Desembolso", 
+            "pregunta": 16
+        }
+    }, 
+    {
+        "pk": 77, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 2, 
+            "titulo": "Contabilidad por Proyecto o por Donante, sin Acumulaci\u00f3n", 
+            "pregunta": 16
+        }
+    }, 
+    {
+        "pk": 78, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 3, 
+            "titulo": "Contabilidad por Proyecto, con Acumulaci\u00f3n en el Estado Financiero General de la Cooperativa", 
+            "pregunta": 16
+        }
+    }, 
+    {
+        "pk": 79, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 4, 
+            "titulo": "El Plan de Cuentas Permite Realizar el An\u00e1lisis Financiero de los Proyectos en Forma Conjunta", 
+            "pregunta": 16
+        }
+    }, 
+    {
+        "pk": 80, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 5, 
+            "titulo": "Se usa la Informaci\u00f3n Contable en el Proceso de Toma de Decisiones", 
+            "pregunta": 16
+        }
+    }, 
+    {
+        "pk": 81, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 1, 
+            "titulo": "No hay Informes Financieros", 
+            "pregunta": 17
+        }
+    }, 
+    {
+        "pk": 82, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 2, 
+            "titulo": "Algunos Informes Financieros, pero no circulan entre los socios y socias", 
+            "pregunta": 17
+        }
+    }, 
+    {
+        "pk": 83, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 3, 
+            "titulo": "Se prepara Informes Financieros completos pero no Circulan entre los socios y socias", 
+            "pregunta": 17
+        }
+    }, 
+    {
+        "pk": 84, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 4, 
+            "titulo": "Se prepara y entrega a tiempo los informes financieros cada trimestre o semestre", 
+            "pregunta": 17
+        }
+    }, 
+    {
+        "pk": 85, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 5, 
+            "titulo": "Se prepara y entrega a tiempo los informes financieros cada trimestre o semestre, a\u00f1o con a\u00f1o", 
+            "pregunta": 17
+        }
+    }, 
+    {
+        "pk": 86, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 1, 
+            "titulo": "No se Calcula el Flujo de Caja", 
+            "pregunta": 18
+        }
+    }, 
+    {
+        "pk": 87, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 2, 
+            "titulo": "El Flujo de Caja S\u00f3lo se Calcula Ocasionalmente o para Proyectos Espec\u00edficos", 
+            "pregunta": 18
+        }
+    }, 
+    {
+        "pk": 88, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 3, 
+            "titulo": "El Flujo de Caja se Calcula Anualmente y se Utiliza para Orientar las Decisiones Program\u00e1ticas", 
+            "pregunta": 18
+        }
+    }, 
+    {
+        "pk": 89, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 4, 
+            "titulo": "El Flujo de Caja se Calcula Trimestralmente y se Utiliza para Orientar las Decisiones ", 
+            "pregunta": 18
+        }
+    }, 
+    {
+        "pk": 90, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 5, 
+            "titulo": "El Flujo de Caja se Calcula Trimestralmente y se Utiliza para Orientar las Decisiones ano con a\u00f1o", 
+            "pregunta": 18
+        }
+    }, 
+    {
+        "pk": 91, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 1, 
+            "titulo": "No se maneja el inventario", 
+            "pregunta": 19
+        }
+    }, 
+    {
+        "pk": 92, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 2, 
+            "titulo": "En inventario de maneja ocasionalmente o para Proyectos Espec\u00edficos", 
+            "pregunta": 19
+        }
+    }, 
+    {
+        "pk": 93, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 3, 
+            "titulo": "En inventario se actualiza anualmente y se Utiliza para Orientar las Decisiones Program\u00e1ticas", 
+            "pregunta": 19
+        }
+    }, 
+    {
+        "pk": 94, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 4, 
+            "titulo": "El inventarios se actualiza trimestralmente y se Utiliza para Orientar las Decisiones", 
+            "pregunta": 19
+        }
+    }, 
+    {
+        "pk": 95, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 5, 
+            "titulo": "El inventario es integrado en sistema administrativo financiero de la cooperativa", 
+            "pregunta": 19
+        }
+    }, 
+    {
+        "pk": 96, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 1, 
+            "titulo": "No se llevan a Cabo Auditor\u00edas Internas ni Externas, de los Estados Financieros institucional", 
+            "pregunta": 20
+        }
+    }, 
+    {
+        "pk": 97, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 2, 
+            "titulo": "S\u00f3lo se llevan a Cabo Auditor\u00edas Internas no Externas", 
+            "pregunta": 20
+        }
+    }, 
+    {
+        "pk": 98, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 3, 
+            "titulo": "Se llevan a Cabo Auditor\u00edas Internas y Externas, no peri\u00f3dica, a demanda de donantes", 
+            "pregunta": 20
+        }
+    }, 
+    {
+        "pk": 99, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 4, 
+            "titulo": "Se llevan a Cabo Auditor\u00edas Internas y Externas en Forma Peri\u00f3dica y las Recomendaciones se Ponen Pr\u00e1cticas solo parcialmente.", 
+            "pregunta": 20
+        }
+    }, 
+    {
+        "pk": 100, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 5, 
+            "titulo": "Se llevan a Cabo Auditor\u00edas Internas y Externas en Forma Peri\u00f3dica y se Ponen en Pr\u00e1ctica todas las Recomendaciones", 
+            "pregunta": 20
+        }
+    }, 
+    {
+        "pk": 101, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 1, 
+            "titulo": "La Cooperativa no tiene relaciones con ninguna empresa", 
+            "pregunta": 21
+        }
+    }, 
+    {
+        "pk": 102, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 2, 
+            "titulo": "La Cooperativa Ocasionalmente se Asocia con algunas empresas", 
+            "pregunta": 21
+        }
+    }, 
+    {
+        "pk": 103, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 3, 
+            "titulo": "La Cooperativa tiene Relaciones de negocio y, al Menos, con una empresas", 
+            "pregunta": 21
+        }
+    }, 
+    {
+        "pk": 104, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 4, 
+            "titulo": "La Cooperativa Tiene Relaciones de compra venta con varias empresas", 
+            "pregunta": 21
+        }
+    }, 
+    {
+        "pk": 105, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 5, 
+            "titulo": "La Cooperativa Tiene Relaciones de con varias empresas a nivel de socias estrat\u00e9gicas", 
+            "pregunta": 21
+        }
+    }, 
+    {
+        "pk": 106, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 1, 
+            "titulo": "La Cooperativa no colabora con otras Organizaciones", 
+            "pregunta": 22
+        }
+    }, 
+    {
+        "pk": 107, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 2, 
+            "titulo": "La Cooperativa Colabora con Otras Organizaciones solo cuando hay un proyecto", 
+            "pregunta": 22
+        }
+    }, 
+    {
+        "pk": 108, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 3, 
+            "titulo": "La Cooperativa Ocasionalmente se Asocia o Emprende Proyectos con Otras Organizaciones\r\nen manera desordenada o fortuita", 
+            "pregunta": 22
+        }
+    }, 
+    {
+        "pk": 109, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 4, 
+            "titulo": "La Cooperativa tiene Relaciones de Trabajo y, al Menos, un Proyecto en Conjunto con otra \tCooperativa en forma ordenada y organizada", 
+            "pregunta": 22
+        }
+    }, 
+    {
+        "pk": 110, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 5, 
+            "titulo": "La Cooperativa Tiene Relaciones de Trabajo de A\u00f1os y/o Proyectos Conjuntos con Varias \tOrganizaciones Estrat\u00e9gicas Socias", 
+            "pregunta": 22
+        }
+    }, 
+    {
+        "pk": 111, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 1, 
+            "titulo": "La Cooperativa Colabora no tiene relaciones con la organizaciones comunitarias", 
+            "pregunta": 23
+        }
+    }, 
+    {
+        "pk": 112, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 2, 
+            "titulo": "La Cooperativa Ocasionalmente se colabora o asocia con las organizaciones comunitarias", 
+            "pregunta": 23
+        }
+    }, 
+    {
+        "pk": 113, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 3, 
+            "titulo": "La Cooperativa tiene Relaciones de trabajo en un tema espec\u00edfica con la organizaciones \tcomunitarias", 
+            "pregunta": 23
+        }
+    }, 
+    {
+        "pk": 114, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 4, 
+            "titulo": "La Cooperativa tiene Relaciones de trabajo en varios temas con la organizaciones \tcomunitarias", 
+            "pregunta": 23
+        }
+    }, 
+    {
+        "pk": 115, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 5, 
+            "titulo": "La Cooperativa representa los intereses de las organizaciones comunitarias y aporta tiempo y recursos para desarrollo comunitario", 
+            "pregunta": 23
+        }
+    }, 
+    {
+        "pk": 116, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 1, 
+            "titulo": "No respetados por las comunidades y sus  llamados no son atendidas", 
+            "pregunta": 24
+        }
+    }, 
+    {
+        "pk": 117, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 2, 
+            "titulo": "Es respectado por unos Pocos Actores de las comunidades y sus llamados son poco atendidas", 
+            "pregunta": 24
+        }
+    }, 
+    {
+        "pk": 118, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 3, 
+            "titulo": "Es respectadas por una buena parte de las comunidades y sus llamado son a veces atendidas", 
+            "pregunta": 24
+        }
+    }, 
+    {
+        "pk": 119, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 4, 
+            "titulo": "Es altamente respetada por una gran parte de las comunidades y sus  llamados son bien atendidas", 
+            "pregunta": 24
+        }
+    }, 
+    {
+        "pk": 120, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 5, 
+            "titulo": "Las comunidades respeta la Cooperativa y solicita a la Cooperativa para defender su intereses", 
+            "pregunta": 24
+        }
+    }, 
+    {
+        "pk": 121, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 1, 
+            "titulo": "La Cooperativa no tiene relaciones con los gobiernos locales/territoriales", 
+            "pregunta": 25
+        }
+    }, 
+    {
+        "pk": 122, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 2, 
+            "titulo": "La Cooperativa ocasionalmente en eventos o reuniones con los gobiernos locales/territoriales", 
+            "pregunta": 25
+        }
+    }, 
+    {
+        "pk": 123, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 3, 
+            "titulo": "La Cooperativa tiene relaciones de trabajo en forma permanente en un tema espec\u00edfica con la los gobiernos locales/territoriales", 
+            "pregunta": 25
+        }
+    }, 
+    {
+        "pk": 124, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 4, 
+            "titulo": "La Cooperativa tiene relaciones de trabajo en varios temas con gobiernos locales/territoriales", 
+            "pregunta": 25
+        }
+    }, 
+    {
+        "pk": 125, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 5, 
+            "titulo": "La Cooperativa representa los intereses de las organizaciones comunitarias en los espacios de los gobiernos locales/territoriales", 
+            "pregunta": 25
+        }
+    }, 
+    {
+        "pk": 126, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 1, 
+            "titulo": "La cooperativa tiene poca capacidad y no ha elaborado propuestas", 
+            "pregunta": 26
+        }
+    }, 
+    {
+        "pk": 127, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 2, 
+            "titulo": "La cooperativa tiene poca capacidad y no ha elaborado propuestas", 
+            "pregunta": 26
+        }
+    }, 
+    {
+        "pk": 128, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 3, 
+            "titulo": "La cooperativa tiene unas personas con experiencias y ha elaborado 3 propuestas", 
+            "pregunta": 26
+        }
+    }, 
+    {
+        "pk": 129, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 4, 
+            "titulo": "La cooperativa tiene buena capacidad de elaborar propuestas y ha elaborado varias", 
+            "pregunta": 26
+        }
+    }, 
+    {
+        "pk": 130, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 5, 
+            "titulo": "La Cooperativa tiene buena capacidad de formular propuesta utilizando metodolog\u00eda participativa y ha elaborado varias propuestas de esta manera", 
+            "pregunta": 26
+        }
+    }, 
+    {
+        "pk": 131, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 1, 
+            "titulo": "La cooperativa tiene poca capacidad de ejecutar fondos y ejecutan solamente 50% o menos", 
+            "pregunta": 27
+        }
+    }, 
+    {
+        "pk": 132, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 2, 
+            "titulo": "La cooperativa tiene algo de capacidad de ejecuci\u00f3n y logra ejecutar 75% de fondos", 
+            "pregunta": 27
+        }
+    }, 
+    {
+        "pk": 133, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 3, 
+            "titulo": "La cooperativa tiene buena capacidad de ejecuci\u00f3n y ejecuta el 100% de fondos", 
+            "pregunta": 27
+        }
+    }, 
+    {
+        "pk": 134, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 4, 
+            "titulo": "La cooperativa tiene buena capacidad y ejecuci\u00f3n y rendici\u00f3n de cuenta", 
+            "pregunta": 27
+        }
+    }, 
+    {
+        "pk": 135, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 5, 
+            "titulo": "La cooperativa tiene buena capacidad para planificar la ejecuci\u00f3n de fondos", 
+            "pregunta": 27
+        }
+    }, 
+    {
+        "pk": 136, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 1, 
+            "titulo": "Las adquisiciones se realizan arbitrariamente, sin licitaci\u00f3n y sin descripciones de productos", 
+            "pregunta": 28
+        }
+    }, 
+    {
+        "pk": 137, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 2, 
+            "titulo": "Las adquisiciones se realiza con lista corta sin una descripci\u00f3n precisa de productos", 
+            "pregunta": 28
+        }
+    }, 
+    {
+        "pk": 138, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 3, 
+            "titulo": "Las adquisiciones se realiza con  licitaci\u00f3n local con una descripci\u00f3n precisa de productos\r\npero con evaluaciones deficientes de los licitantes", 
+            "pregunta": 28
+        }
+    }, 
+    {
+        "pk": 139, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 4, 
+            "titulo": "Las adquisiciones se realiza con  licitaci\u00f3n nacional con una descripci\u00f3n precisa de productos con evaluaci\u00f3n rigoroso de los licitantes ", 
+            "pregunta": 28
+        }
+    }, 
+    {
+        "pk": 140, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 5, 
+            "titulo": "Los procesos de adquisiciones son documentadas y organizadas para el seguimiento", 
+            "pregunta": 28
+        }
+    }, 
+    {
+        "pk": 141, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 1, 
+            "titulo": "La cooperativa tiene poca capacidad y no ha elaborado informes t\u00e9cnicos", 
+            "pregunta": 29
+        }
+    }, 
+    {
+        "pk": 142, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 2, 
+            "titulo": "La cooperativa tiene algo de capacidad y ha elaborado informes t\u00e9cnicos deficientes", 
+            "pregunta": 29
+        }
+    }, 
+    {
+        "pk": 143, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 3, 
+            "titulo": "La cooperativa tiene unas personas con experiencias y ha elaborado buenos informes", 
+            "pregunta": 29
+        }
+    }, 
+    {
+        "pk": 144, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 4, 
+            "titulo": "Los informes son buenos y abordan detalles de las actividades de los proyectos", 
+            "pregunta": 29
+        }
+    }, 
+    {
+        "pk": 145, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 5, 
+            "titulo": "Los informes t\u00e9cnicos de enfocan sobre los resultados de proyectos basado en indicadores\r\ncon consulta a sistema de informaci\u00f3n en linea", 
+            "pregunta": 29
+        }
+    }, 
+    {
+        "pk": 146, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 1, 
+            "titulo": "Sin Definir Necesidades Financieras para Lograr los Objetivos Administrativos y Program\u00e1ticos (3-5 a\u00f1os)", 
+            "pregunta": 30
+        }
+    }, 
+    {
+        "pk": 147, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 2, 
+            "titulo": "Cuantificadas las Necesidades Financieras para los Pr\u00f3ximos 3-5 a\u00f1os", 
+            "pregunta": 30
+        }
+    }, 
+    {
+        "pk": 148, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 3, 
+            "titulo": "Comienzan a Trazar Estrategias de Recaudaci\u00f3n de Fondos y han Comenzado a Ensayar esos \tM\u00e9todos", 
+            "pregunta": 30
+        }
+    }, 
+    {
+        "pk": 149, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 4, 
+            "titulo": "Ensayo y Analizan Varios M\u00e9todos de Generaci\u00f3n de Ingresos hacia un Plan Financiero y ha \tComenzado a Concretar Algunas de Ellas", 
+            "pregunta": 30
+        }
+    }, 
+    {
+        "pk": 150, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 5, 
+            "titulo": "Poseen un Plan de Sustentabilidad Financiera Monitoreado Permamentemente. Se Cumplen las Metas y se Realizan Ajustes", 
+            "pregunta": 30
+        }
+    }, 
+    {
+        "pk": 151, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 1, 
+            "titulo": "No Existen Actividades Sistem\u00e1ticas para la Generaci\u00f3n de Recursos", 
+            "pregunta": 31
+        }
+    }, 
+    {
+        "pk": 152, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 2, 
+            "titulo": "Una sola Persona es Responsable de Casi toda la Generaci\u00f3n de los Recursos", 
+            "pregunta": 31
+        }
+    }, 
+    {
+        "pk": 153, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 3, 
+            "titulo": "La Cooperativa ha Comenzado a Sistematizar Actividades para Generar Recursos y a Delegar los Contactos con los Donantes", 
+            "pregunta": 31
+        }
+    }, 
+    {
+        "pk": 154, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 4, 
+            "titulo": "Objetivos de Recaudaci\u00f3n de Fondos est\u00e1n Claramente Definidos y el Plan para Lograrlos est\u00e1 Desarrollado de Forma Compartida y Sistem\u00e1tica", 
+            "pregunta": 31
+        }
+    }, 
+    {
+        "pk": 155, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 5, 
+            "titulo": "El proceso de Recaudaci\u00f3n de Fondos est\u00e1 Integrado con los Sistemas Financieros \tAdministrativos, con Seguimiento y Ajuste Constantes", 
+            "pregunta": 31
+        }
+    }, 
+    {
+        "pk": 156, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 1, 
+            "titulo": "No Tiene Mecanismo de Sustentabilidad Financiera a Largo Plazo", 
+            "pregunta": 32
+        }
+    }, 
+    {
+        "pk": 157, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 2, 
+            "titulo": "Est\u00e1n en Proceso de Establecer un Mecanismo de Sustentabilidad Financiera a Largo Plazo", 
+            "pregunta": 32
+        }
+    }, 
+    {
+        "pk": 158, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 3, 
+            "titulo": "CD est\u00e1 en Proceso de Desarrollar una Estrategia de Financiamiento a Largo Plazo", 
+            "pregunta": 32
+        }
+    }, 
+    {
+        "pk": 159, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 4, 
+            "titulo": "CD da Lineamiento para Administraci\u00f3n de una Estrategia de Financiamiento a Largo Plazo", 
+            "pregunta": 32
+        }
+    }, 
+    {
+        "pk": 160, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 5, 
+            "titulo": "CD Implementa una Estrategia para Gu\u00edar la Creaci\u00f3n y la Administraci\u00f3n de los Mecanismos de Financiamiento a Largo Plazo ( Fondos de Donaci\u00f3n, Propiedades, Empresas de Riesgo, Etc.", 
+            "pregunta": 32
+        }
+    }, 
+    {
+        "pk": 161, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 1, 
+            "titulo": "Una Fuente de Financiamiento ( donantes ) Representa m\u00e1s del 80% de los Ingresos ", 
+            "pregunta": 33
+        }
+    }, 
+    {
+        "pk": 162, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 2, 
+            "titulo": "Una Fuente de Financiamiento (donante) Representa m\u00e1s del 60% de los Ingresos", 
+            "pregunta": 33
+        }
+    }, 
+    {
+        "pk": 163, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 3, 
+            "titulo": "Una Fuente de Financiamiento ( donante) Representa m\u00e1s del 40% de los Ingresos de la \tCooperativa; al Menos otras Cuatro Fuentes Representan el 60% Restante", 
+            "pregunta": 33
+        }
+    }, 
+    {
+        "pk": 164, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 4, 
+            "titulo": "Por lo Menos Cinco de las Fuentes de Financiamiento ( Donantes ) Representan el 60% del \tPresupuesto Total de la Cooperativa.", 
+            "pregunta": 33
+        }
+    }, 
+    {
+        "pk": 165, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 5, 
+            "titulo": "La Cooperativa posee una Amplia Base de Financiamiento Formada al Menos por 8 Fuentes \t( Donantes) Diferente", 
+            "pregunta": 33
+        }
+    }, 
+    {
+        "pk": 166, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 1, 
+            "titulo": "Los Cargos son Desarrollados Arbitrariamente; no se Realizan Descripciones de Tareas", 
+            "pregunta": 34
+        }
+    }, 
+    {
+        "pk": 167, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 2, 
+            "titulo": "Pocos Cargos son Dise\u00f1os en Base al Plan Estrat\u00e9gico: Existen Descripciones de Tareas para la Algunos de los Trabajos Anunciados", 
+            "pregunta": 34
+        }
+    }, 
+    {
+        "pk": 168, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 3, 
+            "titulo": "Algunos Cargos son Creados en Base a las necesidades Estrat\u00e9gicas, Existen Descripciones de Tareas para la Mayor\u00eda de los Trabajos Anunciados.", 
+            "pregunta": 34
+        }
+    }, 
+    {
+        "pk": 169, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 4, 
+            "titulo": "Los Cargos Generalmente se Desarrollan en Base a las Necesidades Estrat\u00e9gicas; Existen \tDescripciones de Tareas para todos los Trabajos anunciados y se Utilizan en el Proceso de \tContrataci\u00f3n", 
+            "pregunta": 34
+        }
+    }, 
+    {
+        "pk": 170, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 5, 
+            "titulo": "Las Necesidades de Personal se Proyectan en Base al Plan Estrat\u00e9gica; Existen Descripciones de Tareas para todo el Personal, son Utilizadas Sistem\u00e1ticamente en el Proceso de Contrataci\u00f3n y \tson Actualizadas Peri\u00f3dicamente", 
+            "pregunta": 34
+        }
+    }, 
+    {
+        "pk": 171, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 1, 
+            "titulo": "Se Ofrece Acceso a la Orientaci\u00f3n y la Capacitaci\u00f3n en Forma Oportunista y Aleatoria a Algunos Miembros del Personal", 
+            "pregunta": 35
+        }
+    }, 
+    {
+        "pk": 172, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 2, 
+            "titulo": "Se Ofrece Acceso a la Orientaci\u00f3n y Capacidad en Forma Oportunista y Aleatoria a Algunos \tMiembros del Personal", 
+            "pregunta": 35
+        }
+    }, 
+    {
+        "pk": 173, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 3, 
+            "titulo": "Se destina Recursos, Orientaci\u00f3n y, Ocasionalmente, Busca Fondos para Financiar la \tCapacitaci\u00f3n", 
+            "pregunta": 35
+        }
+    }, 
+    {
+        "pk": 174, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 4, 
+            "titulo": "Se destina Recursos y Ofrece a la Mayor\u00eda del Personal, Orientaci\u00f3n y Capacitaci\u00f3n en Materias. Relacionadas con sus Funciones ( Incluidas las Generaciones)", 
+            "pregunta": 35
+        }
+    }, 
+    {
+        "pk": 175, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 5, 
+            "titulo": "Se Obtienen Fondos para llevar a cabo su Estrategia de Capacitaci\u00f3n e Instruyen al Personal en Forma Continua de Acuerdo con sus Objetivos Anuales", 
+            "pregunta": 35
+        }
+    }, 
+    {
+        "pk": 176, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 1, 
+            "titulo": "Supervisi\u00f3n y Evaluaci\u00f3n es Escasa o Inexistente, no hay un Sistema de Evaluaci\u00f3n del \tDesempe\u00f1o", 
+            "pregunta": 36
+        }
+    }, 
+    {
+        "pk": 177, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 2, 
+            "titulo": "Se Eval\u00faa en Forma Espor\u00e1dica o Informal ", 
+            "pregunta": 36
+        }
+    }, 
+    {
+        "pk": 178, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 3, 
+            "titulo": "Se Eval\u00faa Anualmente en base de informes", 
+            "pregunta": 36
+        }
+    }, 
+    {
+        "pk": 179, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 4, 
+            "titulo": "Proceso Institucionalizado y Sistem\u00e1tico de Supervisi\u00f3n y Evaluaci\u00f3n, pero no se cumple con el rigor", 
+            "pregunta": 36
+        }
+    }, 
+    {
+        "pk": 180, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 5, 
+            "titulo": "Proceso Institucionalizado y Sistem\u00e1tico de Supervisi\u00f3n y Evaluaci\u00f3n, que cumple a\u00f1o con a\u00f1o \ten forma Regular", 
+            "pregunta": 36
+        }
+    }, 
+    {
+        "pk": 181, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 1, 
+            "titulo": "Sueldos y beneficios por debajo de organizaciones similares y no existe escala de sueldos", 
+            "pregunta": 37
+        }
+    }, 
+    {
+        "pk": 182, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 2, 
+            "titulo": "Sueldos y beneficios generalmente no comparables con similares y la escala de sueldos no es justa", 
+            "pregunta": 37
+        }
+    }, 
+    {
+        "pk": 183, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 3, 
+            "titulo": "Los sueldos y beneficios son a veces comparables, escala de sueldos es moderadamente justa", 
+            "pregunta": 37
+        }
+    }, 
+    {
+        "pk": 184, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 4, 
+            "titulo": "Los sueldos y beneficios son generalmente comparables, escala de sueldos es razonablemente justa", 
+            "pregunta": 37
+        }
+    }, 
+    {
+        "pk": 185, 
+        "model": "encuesta.opcion", 
+        "fields": {
+            "puntaje": 5, 
+            "titulo": "Los sueldos y beneficios son competitivos, basados en escala que refleja equidad", 
+            "pregunta": 37
+        }
+    }
+]

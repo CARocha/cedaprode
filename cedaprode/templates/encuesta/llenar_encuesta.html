@@ -35,9 +35,15 @@
       </div>
     {%endif%}
     <div class="separador"></div>
+    <form action="." method="POST" >
+      {{forma1.as_p}}
+      {{forma2.as_p}}
+      {{forma3.as_p}}
+    </form>
     <br>
     <form action="." method="POST" accept-charset="utf-8" id="encuesta">
       {% csrf_token %}
+      
       {{ formset.management_form }}
       {% for fila in formset|categorizador%}
         <fieldset class="categoria-{{fila.categoria.id}}" title="Paso {{forloop.counter}}">

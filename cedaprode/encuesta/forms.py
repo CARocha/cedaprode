@@ -55,3 +55,20 @@ class AdjuntoForm(forms.ModelForm):
 
     class Meta:
         model = Adjunto
+
+#formulario extra para acicafoc
+
+class ExtraInformacionForm(forms.Form):
+
+    class Meta:
+        model = ExtraInformacion
+
+class RubrosManejadosForm(forms.Form):
+    
+    class Meta:
+        model = RubrosManejados
+
+class FrecuenciaInfoForm(forms.Form):
+    
+    class Meta:
+        model = FrecuenciaInfo
