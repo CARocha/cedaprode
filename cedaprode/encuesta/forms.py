@@ -58,17 +58,27 @@ class AdjuntoForm(forms.ModelForm):
 
 #formulario extra para acicafoc
 
-class ExtraInformacionForm(forms.Form):
+class ExtraInformacionForm(forms.ModelForm):
+
+    #def __init__(self, *args, **kwargs):
+     #   super(ExtraInformacionForm, self).__init__(*args, **kwargs)
+     #   self.fields['integradas'] = forms.ChoiceField(choices = CHOICE_INTEGRADAS , 
+      #                      widget=forms.Select(),  required=False)
+        #self.fields['hombres'] = forms.IntegerField(required=False)
+        #self.fields['mujeres'] = forms.IntegerField(required=False)
 
     class Meta:
         model = ExtraInformacion
+        fields = ('integradas', 'hombres', 'mujeres')
 
-class RubrosManejadosForm(forms.Form):
+class RubrosManejadosForm(forms.ModelForm):
     
     class Meta:
         model = RubrosManejados
+        fields = ('rubros', 'volumen_global', 'volumen_cacao')
 
-class FrecuenciaInfoForm(forms.Form):
+class FrecuenciaInfoForm(forms.ModelForm):
     
     class Meta:
         model = FrecuenciaInfo
+        fields = ('tipos', 'respuesta', )

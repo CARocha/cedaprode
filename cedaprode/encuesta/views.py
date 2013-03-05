@@ -30,31 +30,33 @@ def llenar_encuesta(request, encuesta_id):
                                                   form=RespuestaInlineForm,
                                                   can_delete=False,
                                                   max_num=0)
+    Form1InlineFormSet = inlineformset_factory(Encuesta, ExtraInformacion,extra = 4)
+
     if request.method == 'POST':
         formset = PreguntaInlineFormSet(request.POST, request.FILES, instance = encuesta)
-        forma1 = ExtraInformacionForm(request.POST)
-        forma2 = RubrosManejadosForm(request.POST)
-        forma3 = FrecuenciaInfoForm(request.POST)
-        if formset.is_valid() and forma1.is_valid() and forma2.is_valid() and forma3.is_valid():
+        form1 = Form1InlineFormSet(request.POST, instance = encuesta)
+        form2 = RubrosManejadosForm(request.POST, instance=encuesta)
+        form3 = FrecuenciaInfoForm(request.POST, instance=encuesta)
+        if formset.is_valid() and form1.is_valid() and form2.is_valid() and form3.is_valid():
             formset.save()
-            forma1.save()
-            forma2.save()
-            forma3.save()
+            form1.save()
+            form2.save()
+            form3.save()
             return redirect('mis-encuestas')
         # else:
         #     formset = PreguntaInlineFormSet(request.POST, instance = encuesta)
-        #     forma1 = ExtraInformacionForm()
-        #     forma2 = RubrosManejadosForm()
-        #     forma3 = FrecuenciaInfoForm()
+        #     form1 = ExtraInformacionForm()
+        #     form2 = RubrosManejadosForm()
+        #     form3 = FrecuenciaInfoForm()
     else:
         formset = PreguntaInlineFormSet(instance=encuesta)
-        forma1 = ExtraInformacionForm()
-        forma2 = RubrosManejadosForm()
-        forma3 = FrecuenciaInfoForm()
+        form1 = ExtraInformacionForm(instance=encuesta)
+        form2 = RubrosManejadosForm(instance=encuesta)
+        form3 = FrecuenciaInfoForm(instance=encuesta)
     return render_to_response('encuesta/llenar_encuesta.html',
                     {'formset': formset, 'encuesta': encuesta.id,
-                     'adjuntos':adjuntos, 'forma1':forma1, 
-                     'forma2':forma2, 'forma3':forma3},
+                     'adjuntos':adjuntos, 'form1':form1, 
+                     'form2':form2, 'form3':form3},
                     context_instance=RequestContext(request))
 
 @login_required
