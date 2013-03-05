@@ -30,7 +30,11 @@ def llenar_encuesta(request, encuesta_id):
                                                   form=RespuestaInlineForm,
                                                   can_delete=False,
                                                   max_num=0)
-    Form1InlineFormSet = inlineformset_factory(Encuesta, ExtraInformacion,extra = 4)
+    Form1InlineFormSet = inlineformset_factory(Encuesta, ExtraInformacion,
+                                        extra = 7,
+                                        form=ExtraInformacionForm,
+                                        can_delete=False,
+                                        )
 
     if request.method == 'POST':
         formset = PreguntaInlineFormSet(request.POST, request.FILES, instance = encuesta)
@@ -50,7 +54,7 @@ def llenar_encuesta(request, encuesta_id):
         #     form3 = FrecuenciaInfoForm()
     else:
         formset = PreguntaInlineFormSet(instance=encuesta)
-        form1 = ExtraInformacionForm(instance=encuesta)
+        form1 = Form1InlineFormSet(instance = encuesta)
         form2 = RubrosManejadosForm(instance=encuesta)
         form3 = FrecuenciaInfoForm(instance=encuesta)
     return render_to_response('encuesta/llenar_encuesta.html',

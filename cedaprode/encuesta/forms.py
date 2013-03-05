@@ -60,10 +60,10 @@ class AdjuntoForm(forms.ModelForm):
 
 class ExtraInformacionForm(forms.ModelForm):
 
-    #def __init__(self, *args, **kwargs):
-     #   super(ExtraInformacionForm, self).__init__(*args, **kwargs)
-     #   self.fields['integradas'] = forms.ChoiceField(choices = CHOICE_INTEGRADAS , 
-      #                      widget=forms.Select(),  required=False)
+    # def __init__(self, *args, **kwargs):
+    #     super(ExtraInformacionForm, self).__init__(*args, **kwargs)
+    #     for datos in CHOICE_INTEGRADAS:
+    #         self.fields['integradas'].initial = datos
         #self.fields['hombres'] = forms.IntegerField(required=False)
         #self.fields['mujeres'] = forms.IntegerField(required=False)
 
