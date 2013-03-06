@@ -2,7 +2,7 @@
 from django.shortcuts import render_to_response, get_object_or_404, redirect
 from django.views.generic.simple import direct_to_template
 from django.contrib.auth.decorators import login_required
-from django.forms.models import inlineformset_factory
+from django.forms.models import inlineformset_factory, modelformset_factory, formset_factory
 from django.template import RequestContext
 from django.db.models import Sum
 from forms import *
@@ -24,17 +24,23 @@ def inicio(request):
 @checar_permiso
 def llenar_encuesta(request, encuesta_id):
     encuesta = get_object_or_404(Encuesta, pk = encuesta_id)
+
+    initial_one = [{'integradas':'Asamblea'},
+                             {'integradas':'Junta directiva'},
+                             {'integradas':'Junta de vigilancia'},
+                             {'integradas':'Comisión de formación'},
+                             {'integradas':'Comisión de género'},
+                             {'integradas':'Gerencia'},
+                             {'integradas':'Empleados'}
+                             ]
     
     adjuntos = Adjunto.objects.filter(encuesta__id=encuesta_id)
     PreguntaInlineFormSet = inlineformset_factory(Encuesta, Respuesta,
                                                   form=RespuestaInlineForm,
                                                   can_delete=False,
                                                   max_num=0)
-    Form1InlineFormSet = inlineformset_factory(Encuesta, ExtraInformacion,
-                                        extra = 7,
-                                        form=ExtraInformacionForm,
-                                        can_delete=False,
-                                        )
+
+    
 
     if request.method == 'POST':
         formset = PreguntaInlineFormSet(request.POST, request.FILES, instance = encuesta)
@@ -53,8 +59,10 @@ def llenar_encuesta(request, encuesta_id):
         #     form2 = RubrosManejadosForm()
         #     form3 = FrecuenciaInfoForm()
     else:
+        Form1InlineFormSet = modelformset_factory(ExtraInformacion, form=ExtraInformacionForm, extra = len(initial_one))
         formset = PreguntaInlineFormSet(instance=encuesta)
-        form1 = Form1InlineFormSet(instance = encuesta)
+        form1 = Form1InlineFormSet(initial=initial_one)
+        print form1
         form2 = RubrosManejadosForm(instance=encuesta)
         form3 = FrecuenciaInfoForm(instance=encuesta)
     return render_to_response('encuesta/llenar_encuesta.html',

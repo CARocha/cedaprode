@@ -37,7 +37,7 @@
     <div class="separador"></div>
     <form action="." method="POST" > {% csrf_token %}
       {{form1.management_form}}
-          {%for fila in form1%}
+          {%for fila in form1.forms%}
             {{ fila }}<br>
           {%endfor%}
       {{form2.as_p}}
