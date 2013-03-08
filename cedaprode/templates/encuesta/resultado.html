@@ -105,7 +105,19 @@ $(document).ready(function() {
           <td>{{encuesta.organizacion.descripcion}}</td>
         </tr>
         <tr>
-          <td><b>FECHA</b></td>
+          <td><b>REPRESENTANTE LEGAL</b></td>
+          <td>{{encuesta.organizacion.representante}} - {{encuesta.organizacion.correo_repre}} - {{encuesta.organizacion.celular_repre}}</td>
+        </tr>
+        <tr>
+          <td><b>GERENTE</b></td>
+          <td>{{encuesta.organizacion.gerente}} - {{encuesta.organizacion.correo_gerente}} - {{encuesta.organizacion.celular_gerente}}</td>
+        </tr>
+        <tr>
+          <td><b>FECHA DE FUNDACION</b></td>
+          <td>{{encuesta.organizacion.fecha_fundacion}}</td>
+        </tr>
+        <tr>
+          <td><b>FECHA DE EVALUACION</b></td>
           <td>{{encuesta.fecha}}</td>
         </tr>
         <tr>
@@ -118,7 +130,30 @@ $(document).ready(function() {
           <td>{%for adjunto in adjuntos%}<a href="/files/{{adjunto.archivo}}">{{adjunto.archivo.name}}</a><br>{%endfor%}</td>
         </tr>
         {%endif%}
+        <tr>
+          <td><b>PERSONAS INTEGRADAS EN</b></td>
+          <td>{%for objetos in encuesta.extrainformacion_set.all%}
+            {{objetos.get_integradas_display}}:
+                Hombres: {{objetos.hombres}}
+                Mujeres: {{objetos.mujeres}}<br>
+            {%endfor%}</td>
+        </tr>
+        <tr>
+          <td><b>RUBROS MANEJADOS</b></td>
+          <td>{%for objetos in encuesta.rubrosmanejados_set.all%}
+                {{objetos.rubros}}<br>
+                Volumen global: {{objetos.volumen_global}}<br>
+                Volumen cacao: {{objetos.volumen_cacao}}<br>
+              {%endfor%}</td>
+        </tr>
+        <tr>
+          <td><b>FRECUENCIA DE</b></td>
+          <td>{%for objetos in encuesta.frecuenciainfo_set.all%}
+                {{objetos.get_tipos_display}}:{{objetos.get_respuesta_display}}<br>
+              {%endfor%}</td>
+        </tr>
       </table>
+
   </div>
     <div id="tabs">
       <ul>

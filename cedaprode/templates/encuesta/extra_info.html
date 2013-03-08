@@ -14,7 +14,10 @@
             {{ fila }}<br>
           {%endfor%}
       {{form2.as_p}}
-      {{form3.as_p}}
+      {{form3.management_form}}
+          {%for fila in form3.forms%}
+            {{ fila }}<br>
+          {%endfor%}
     <input type="submit" value="Agregar">
     </form>
     <div class="separador"></div>

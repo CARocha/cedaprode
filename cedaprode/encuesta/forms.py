@@ -69,7 +69,7 @@ class ExtraInformacionForm(forms.ModelForm):
 
     class Meta:
         model = ExtraInformacion
-        fields = ('integradas', 'hombres', 'mujeres')
+        exclude = ('encuesta',)
 
 class RubrosManejadosForm(forms.ModelForm):
     
@@ -81,4 +81,4 @@ class FrecuenciaInfoForm(forms.ModelForm):
     
     class Meta:
         model = FrecuenciaInfo
-        fields = ('tipos', 'respuesta', )
+        exclude = ('encuesta',)

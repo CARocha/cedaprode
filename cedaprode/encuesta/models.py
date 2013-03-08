@@ -152,7 +152,7 @@ class ExtraInformacion(models.Model):
     mujeres = models.IntegerField(null=True, blank=True)
 
     def __unicode__(self):
-        return u'%' % str(self.get_integradas_display())
+        return u'%s hombre - %s mujeres' % (str(self.hombres),str(self.mujeres))
 
     class Meta:
         verbose_name_plural = "Extra información"
@@ -175,7 +175,7 @@ class FrecuenciaInfo(models.Model):
     respuesta = models.IntegerField(choices=CHOICE_FRECUENCIA)
 
     def __unicode__(self):
-        return u'%s - %s' % (str(self.get_tipos_display()), str(self.get_respuesta_display()))
+        return u'%s tipos - %s respuesta' % (self.get_tipos_display(), self.get_respuesta_display())
 
     class Meta:
         verbose_name_plural = "Frecuencia Info"
