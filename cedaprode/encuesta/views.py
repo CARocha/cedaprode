@@ -24,15 +24,6 @@ def inicio(request):
 @checar_permiso
 def llenar_encuesta(request, encuesta_id):
     encuesta = get_object_or_404(Encuesta, pk = encuesta_id)
-
-    initial_one = [{'integradas':'Asamblea'},
-                             {'integradas':'Junta directiva'},
-                             {'integradas':'Junta de vigilancia'},
-                             {'integradas':'Comisión de formación'},
-                             {'integradas':'Comisión de género'},
-                             {'integradas':'Gerencia'},
-                             {'integradas':'Empleados'}
-                             ]
     
     adjuntos = Adjunto.objects.filter(encuesta__id=encuesta_id)
     PreguntaInlineFormSet = inlineformset_factory(Encuesta, Respuesta,
@@ -40,35 +31,22 @@ def llenar_encuesta(request, encuesta_id):
                                                   can_delete=False,
                                                   max_num=0)
 
-    
-
     if request.method == 'POST':
         formset = PreguntaInlineFormSet(request.POST, request.FILES, instance = encuesta)
-        form1 = Form1InlineFormSet(request.POST, instance = encuesta)
-        form2 = RubrosManejadosForm(request.POST, instance=encuesta)
-        form3 = FrecuenciaInfoForm(request.POST, instance=encuesta)
-        if formset.is_valid() and form1.is_valid() and form2.is_valid() and form3.is_valid():
+        
+        if formset.is_valid():
             formset.save()
-            form1.save()
-            form2.save()
-            form3.save()
+            
             return redirect('mis-encuestas')
         # else:
         #     formset = PreguntaInlineFormSet(request.POST, instance = encuesta)
-        #     form1 = ExtraInformacionForm()
-        #     form2 = RubrosManejadosForm()
-        #     form3 = FrecuenciaInfoForm()
+        
     else:
-        Form1InlineFormSet = modelformset_factory(ExtraInformacion, form=ExtraInformacionForm, extra = len(initial_one))
         formset = PreguntaInlineFormSet(instance=encuesta)
-        form1 = Form1InlineFormSet(initial=initial_one)
-        print form1
-        form2 = RubrosManejadosForm(instance=encuesta)
-        form3 = FrecuenciaInfoForm(instance=encuesta)
+
     return render_to_response('encuesta/llenar_encuesta.html',
                     {'formset': formset, 'encuesta': encuesta.id,
-                     'adjuntos':adjuntos, 'form1':form1, 
-                     'form2':form2, 'form3':form3},
+                     'adjuntos':adjuntos},
                     context_instance=RequestContext(request))
 
 @login_required
@@ -231,3 +209,40 @@ def eliminar_encuesta(request, encuesta_id):
     encuesta = get_object_or_404(Encuesta, pk=encuesta_id)
     encuesta.delete()
     return redirect('resultados')
+
+#Nuevo codigo
+
+@login_required
+@checar_permiso
+def informacion_extra(request, encuesta_id):
+    encuesta = get_object_or_404(Encuesta, pk=encuesta_id)
+    extra =  ExtraInformacion(encuesta = encuesta)
+    initial_one = [{'integradas':'Asamblea'},
+                             {'integradas':'Junta directiva'},
+                             {'integradas':'Junta de vigilancia'},
+                             {'integradas':'Comisión de formación'},
+                             {'integradas':'Comisión de género'},
+                             {'integradas':'Gerencia'},
+                             {'integradas':'Empleados'}
+                             ]
+
+    if request.method == "POST":
+        form1 = Form1InlineFormSet(request.POST, instance = extra)
+        form2 = RubrosManejadosForm(request.POST, instance=extra)
+        form3 = FrecuenciaInfoForm(request.POST, instance=extra)
+        if form1.is_valid() and form2.is_valid() and form3.is_valid():
+            form1.save()
+            form2.save()
+            form3.save()
+            return redirect('llenar-encuesta', encuesta_id=encuesta.id)
+    else:
+        Form1InlineFormSet = modelformset_factory(ExtraInformacion, form=ExtraInformacionForm, extra = len(initial_one))
+        form1 = Form1InlineFormSet(initial=initial_one)
+        form2 = RubrosManejadosForm(instance=extra)
+        form3 = FrecuenciaInfoForm(instance=extra)
+
+    return render_to_response('encuesta/extra_info.html',
+                      {'form1':form1, 
+                     'form2':form2, 'form3':form3},
+                      context_instance=RequestContext(request))
+

@@ -25,6 +25,7 @@
 <div  style="padding:15px;">
     <h2 class="left">EVALUACION</h2>
     <a href="{% url adjuntar encuesta %}"><img class="der"src="/files/imagen/botonadjuntar.png"></a>
+    <a href="{% url informacionextra encuesta %}">extra informacion</a>
     {%if adjuntos %}
       <div id="tabladescrip">
           <table border="0">
@@ -35,14 +36,6 @@
       </div>
     {%endif%}
     <div class="separador"></div>
-    <form action="." method="POST" > {% csrf_token %}
-      {{form1.management_form}}
-          {%for fila in form1.forms%}
-            {{ fila }}<br>
-          {%endfor%}
-      {{form2.as_p}}
-      {{form3.as_p}}
-    </form>
     <br>
     <form action="." method="POST" accept-charset="utf-8" id="encuesta">
       {% csrf_token %}
