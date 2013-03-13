@@ -25,7 +25,9 @@ ol, ul {
 /* generales */
 
 body{
-    background:#f5f6f6 url(/files/imagen/fondo.png) repeat-y;
+   /* background:#f5f6f6 url(/files/imagen/fondo.png) repeat-y;*/
+   background: url(/files/imagen/bg.jpg)repeat;
+   
     font-family:Arial;
     color:#555753;
     font-size:14px;
@@ -35,7 +37,7 @@ body{
 
 p{line-height:1.3;}
 
-.izq{float:left;}
+.izq{float:left; padding-left: 10px;}
 .der{float:right;}
 .separador{clear:both;}
 
@@ -43,7 +45,10 @@ h2{
     font-size:22px;
     color:#2e3436;
     font-weight:normal;
+    font-family: 'Open Sans', sans-serif;
 }
+
+.left {font-size: 14px;}
 #marco{
     width:100%;
 }
@@ -51,27 +56,35 @@ h2{
 #sidebar{
     width:239px;
     float:left;
+    background: url(/files/imagen/bgsidebar.png)repeat;
+    border-right: solid 1px #48441A;
 }
 
 #cuerpo{
     float:left;
-    width:auto;
+    width:100%;
 }
 
 .margen{
-    padding:10px 15px 0px 15px;
+    padding:20px 15px 0px 15px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 #logo{
-    widht:239px;
+    width:239px;
     height:120px;
-    background:url(/files/imagen/logo.png) no-repeat;
+    color: #5c5447;
+    background: #f6f7b5;
+    
     border-bottom:#691f00 solid 1px;
 }
 
+#panel-front{ border-bottom:#bac5cd 1px solid;
+    height:57px;}
 #panel{
+    padding-top: 20px;
     border-bottom:#bac5cd 1px solid;
-    height:120px;
+    height:37px;
 }
 
 #panel a{
@@ -85,11 +98,16 @@ h2{
     color:#000;
     margin-bottom:10px;
 }
+.main-text{ font-size:24px; text-align:left; padding-top: 15px;padding-left:10px;
+     font-family: 'Open Sans Condensed', sans-serif;}
 
 /* sidebar */
 
 #menuside{
-    padding-top:90px;
+    background:#e7e885;
+    padding-top: 5px;
+    height: 30px;
+    color: #5c5447;
 }
 
 #menuside a{
@@ -101,6 +119,7 @@ h2{
     font-size:14px;
     line-height:30px;
     padding-left:10px;
+    color: #5c5447;
 }
 
 /* Para formularios */
@@ -108,33 +127,39 @@ h2{
 #id_username, #id_password, #id_nombre, #id_tipo, #id_municipio, 
 #id_organizacion, #id_representante, #id_celular_repre, #id_correo_repre,
 #id_gerente, #id_celular_gerente, #id_correo_gerente{
-    width:400px;
+    width:250px;
     font-size:16px;
-    background:#fff url(/files/imagen/fondotextfield.png) repeat-x;
+   /* background:#fff url(/files/imagen/fondotextfield.png) repeat-x;*/
     background-position: top left;
-    height:35px;
+    height:20px;
     border: #b9c7e5 1px solid;
-    border-radius: 5px;
-    -webkit-border-radius: 5px ;
-    -moz-border-radius: 5px ;
+    border-radius: 3px;
+    -webkit-border-radius: 3px ;
+    -moz-border-radius: 3px ;
     padding-left:5px;
     color:#626262;
-    margin-bottom:10px;
+    margin-bottom:8px;
 }
+#id_tipo, #id_municipio{height: auto;}
+.textform{ text-align: left; padding-right: 10px; float: left;}
+.boxdiv{float: left; padding: 10px;}
+.text_hform{ font-size:14px; font-family:Arial;}
 
 #id_pais{width:300px;}
 
  #id_descripcion{
     width:400px;
+    float: left;
     font-size:16px;
-    background:#fff url(/files/imagen/fondotextfield.png) repeat-x;
+   /* background:#fff url(/files/imagen/fondotextfield.png) repeat-x;*/
     background-position: top left;
-    height:250px;
+    height:150px;
     border: #b9c7e5 1px solid;
     border-radius: 5px;
     -webkit-border-radius: 5px ;
     -moz-border-radius: 5px ;
     padding-left:5px;
+    margin-right: 500px;
     color:#626262;
     margin-bottom:10px;
 }
@@ -145,13 +170,33 @@ label{
 }
 
 #agregar input{
-    margin: 10px;
-    background:url(/files/imagen/guardar.jpg);
+   
+    /*background:url(/files/imagen/guardar.jpg);*/
     width:115px;
-    height:33px;
-    border:0;
+    height:25px;
+    margin-top: 20px;
+    margin-left: 10px;
+    float:left; background:#f2b40b;
+    clear: both;
+    color: #fff;
+    border: #E2AC24 1px solid;
+    border-radius: 5px;
+    -webkit-border-radius: 5px ;
+    -moz-border-radius: 5px ;
 }
-
+.boton_guardar{   }
+.boton_new { width:110px;
+    font-size: 14px;
+    height:18px;
+    padding-bottom: 15px;
+    text-align: center;
+    float:right; background:#E9A118;
+    clear: left;
+    color: #fff;
+    border: #E2AC24 1px solid;
+    border-radius: 5px;
+    -webkit-border-radius: 5px ;
+    -moz-border-radius: 5px ;}
 .info, .success, .warning, .error, .validation {
   border: 1px solid;
   margin: 10px 0px;
@@ -269,7 +314,7 @@ label{
 
 #misorg{
     margin-top:20px;
-    color:#723f26;
+    color:#fff;
     font-size:14px;
     text-align:center;
     font-weight:bold;
@@ -279,14 +324,14 @@ label{
 #user-info a,#user-info a:visited{
     margin-top:5px;
     display:block;
-    color:#343a3d;
+    color:#000;
     font-size:13px;
     float:left;
     width:100%;
-    background:url(/files/imagen/fondoenlacesidebar.png);
-    border-radius: 5px;
-    -webkit-border-radius: 5px ;
-    -moz-border-radius: 5px ;
+    background:#EEF5B0;
+    border-radius: 3px;
+    -webkit-border-radius: 3px ;
+    -moz-border-radius: 3px ;
     padding:3px;
 }
 
@@ -297,10 +342,11 @@ label{
 #enlacefooter{
     font-size:12px;
     padding: 0px 20px 0px 20px;
+    color:#524242;
 }
 
 #enlacefooter a{
     text-decoration:none;
-    color:#8e3d25;
+    color:#fff;
 
 }
