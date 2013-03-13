@@ -228,12 +228,10 @@ def informacion_extra(request, encuesta_id):
                    {'tipos':4},
                    {'tipos':5}
                    ]
-    Form1InlineFormSet = modelformset_factory(ExtraInformacion, 
-                        form=ExtraInformacionForm, 
-                        extra = len(initial_one))
-    Form3InlineFormSet = modelformset_factory(FrecuenciaInfo, 
-                        form=FrecuenciaInfoForm, 
-                        extra = len(initial_two))
+    Form1InlineFormSet = formset_factory(ExtraInformacionForm, 
+                        extra = 7, max_num=7)
+    Form3InlineFormSet = formset_factory(FrecuenciaInfoForm, 
+                        extra = 5, max_num=5)
 
     if request.method == "POST":
         form1 = Form1InlineFormSet(request.POST)

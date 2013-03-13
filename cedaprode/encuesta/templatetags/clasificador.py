@@ -15,6 +15,8 @@ def clasificador(value):
        return base_url + 'verde.png'
     elif value <= 180:
        return base_url + 'azul.png'
+    elif value > 181:
+       return base_url + 'azul.png'
     else:
         raise Exception('la shit no es correcta')
 
