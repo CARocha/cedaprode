@@ -9,14 +9,16 @@
     <br>
     <form action="." method="POST" id="encuesta">
       {% csrf_token %}
-      <h2>Participantes hombres mujeres</h2>
+      <h2 class="text-extrainfo">Participantes hombres mujeres</h2>
       {{form1.management_form}}
           {%for fila in form1.forms%}
-            {{ fila.integradas }}{{ fila.hombres }}{{ fila.mujeres }} <br>
+            <div class="info_extra">{{ fila.integradas }}</div>
+            <div class="info_extra">{{ fila.hombres }}</div>
+              {{ fila.mujeres }} <br>
           {%endfor%}
-      <h2>Rubros manejados</h2>
+      <h2 class="text-extrainfo">Rubros manejados</h2>
       {{form2}}<br>
-      <h2>Frecuencia de sesiones</h2>
+      <h2 class="text-extrainfo">Frecuencia de sesiones</h2>
       {{form3.management_form}}
           {%for fila in form3.forms%}
             {{ fila.tipos }} {{ fila.respuesta }} <br>
