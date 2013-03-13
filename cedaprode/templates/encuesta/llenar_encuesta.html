@@ -24,9 +24,12 @@
 {%block content%}
 <div  style="padding:15px;">
     <h2 class="left">EVALUACION</h2>
-    <a href="{% url adjuntar encuesta %}"><img class="der"src="/files/imagen/botonadjuntar.png"></a>
-    <a href="{% url informacionextra encuesta %}">extra informacion</a>
+    <div class="boton_left">
+    <a href="{% url adjuntar encuesta %}"><div class="boton_new">adjuntar archivo</div></a>
+    <a href="{% url informacionextra encuesta %}"><div class="boton_new">extra informacion</div></a>
+     </div>
     {%if adjuntos %}
+
       <div id="tabladescrip">
           <table border="0">
               <td><b>DOCUMENTOS ADJUNTOS</b></td>

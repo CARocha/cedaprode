@@ -9,10 +9,10 @@
     <br>
     <form action="." method="POST" id="encuesta">
       {% csrf_token %}
-      {{form1.management_form}}
+     <div class="info_extra"> {{form1.management_form}}
           {%for fila in form1.forms%}
             {{ fila }}<br>
-          {%endfor%}
+          {%endfor%}</div>
       {{form2.as_p}}
       {{form3.management_form}}
           {%for fila in form3.forms%}
