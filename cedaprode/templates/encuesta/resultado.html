@@ -88,10 +88,10 @@ $(document).ready(function() {
 {% block content %}
 <div  style="padding:15px;">
   <h2 class="left"> RESULTADO DE LA EVALUACION</h2>
-  <a href="{% url imprimir encuesta.id %}"><img class="der"src="/files/imagen/imprimir.jpg"></a>
+  <a href="{% url imprimir encuesta.id %}"><div class="boton_print">Imprimir</div></a>
   <div class="separador"></div>
-  <div id="tabladescrip">
-      <table border="0">
+  <div class="tabla">
+      <table class="table table-hover">
         <tr>
           <td><b>ORGANIZACION</b></td>
           <td>{{encuesta.organizacion}}</td>

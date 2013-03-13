@@ -10,7 +10,7 @@ function showAlert(id) {
 }
 </script>
 <div style="padding:15px;">
-    <h1><a href="{% url crear-encuesta%}"><div class="boton_new">Nueva</div></a></h1>
+    <a href="{% url crear-encuesta%}"><div class="boton_new">Nueva</div></a>
     <h2 class="left"><img src="/files/imagen/survey.png"> MIS EVALUACIONES</h2>
     <div class="separador"><br></div>
     <img src="/files/imagen/rojo.png"/> = Deficiente<img src="/files/imagen/naranja.png"/> = Malo <img src="/files/imagen/amarillo.png"/> = Regular <img src="/files/imagen/verde.png"/> = Bueno <img src="/files/imagen/azul.png"/> = Excelente
@@ -18,7 +18,7 @@ function showAlert(id) {
         {% regroup encuestas by organizacion as encuestas_list %}
         {% for encuesta in encuestas_list%}
           <div class="group">{{encuesta.grouper}}</div>
-         <table>
+         <table class="table table-hover">
          <tr>
            <th>Fecha</th>
            <th>Puntaje Obtenido</th>
