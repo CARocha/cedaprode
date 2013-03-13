@@ -130,6 +130,7 @@ $(document).ready(function() {
           <td>{%for adjunto in adjuntos%}<a href="/files/{{adjunto.archivo}}">{{adjunto.archivo.name}}</a><br>{%endfor%}</td>
         </tr>
         {%endif%}
+        {%if encuesta.extrainformacion_set.all %}
         <tr>
           <td><b>PERSONAS INTEGRADAS EN</b></td>
           <td>{%for objetos in encuesta.extrainformacion_set.all%}
@@ -138,6 +139,8 @@ $(document).ready(function() {
                 Mujeres: {{objetos.mujeres}}<br>
             {%endfor%}</td>
         </tr>
+        {%endif%}
+        {%if encuesta.rubrosmanejados_set.all%}
         <tr>
           <td><b>RUBROS MANEJADOS</b></td>
           <td>{%for objetos in encuesta.rubrosmanejados_set.all%}
@@ -146,12 +149,15 @@ $(document).ready(function() {
                 Volumen cacao: {{objetos.volumen_cacao}}<br>
               {%endfor%}</td>
         </tr>
+        {%endif%}
+        {%if encuesta.frecuenciainfo_set.all%}
         <tr>
           <td><b>FRECUENCIA DE</b></td>
           <td>{%for objetos in encuesta.frecuenciainfo_set.all%}
                 {{objetos.get_tipos_display}}:{{objetos.get_respuesta_display}}<br>
               {%endfor%}</td>
         </tr>
+        {%endif%}
       </table>
 
   </div>
