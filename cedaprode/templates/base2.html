@@ -5,6 +5,9 @@
     <link href="/files/css/estilo.css" rel="stylesheet" type="text/css" media="screen" />
     <title>{%block title%}{%endblock%}</title>
     <script type="text/javascript" src="/files/js/jquery-1.5.1.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href="/files/css/bootstrap.min.css" rel="stylesheet" media="screen">
         <script type="text/javascript">
             $(window).load(function(){
                 var ancho1 = $(window).width();
@@ -19,12 +22,13 @@
     <div id ="marco">
         <div id="sidebar">
             <div id="logo">
-                <div id="menuside">
-                    <a href="/"><img src="/files/imagen/home.png">   Inicio</a>
-                    <a href="{% url user-logout %}"><img src="/files/imagen/out.png">   Salir</a>
-                </div>
+            <div class="main-text">SISTEMA DE AUTOEVALUACION ORGANIZACIONAL ACICAFOC</div>
             </div>
-            <img src="/files/imagen/espiral.jpg"></img>
+            <div id="menuside">
+                    <a href="/"><img src="/files/imagen/home.png">   Inicio</a>
+                    <a href="{% url user-logout %}"><img src="/files/imagen/logout.png">   Salir</a>
+                </div> 
+            
             {%block sidebar%}
             <div id="user-info" style="padding:15px;">
                   <img src="/files/imagen/user.png" align="left"></img>
@@ -41,19 +45,19 @@
                   {%endif%}
             </div>
             {%endblock%}
-            <hr style="background-color:#b8a2a2;color:#b8a2a2; border:0; height:1px;"></hr>
-            <br></br><center><img src="/files/imagen/cedaprode.png"></img></center><br></br>
-            <br></br><center><img src="/files/imagen/unops.png"></img></center><br></br>
-            <br></br><center><a href="http://www.manorpa.org"><img src="/files/imagen/manorpap.png"></a></img>  <a href="http://www.amunse.org.ni"><img src="/files/imagen/amunsep.png"></a></img></center><br></br>
+            <hr style="background-color:#fff;color:#b8a2a2; border:0; height:1px;"></hr>
+            <br><center><img src="/files/imagen/acicafoc.png"></img></center>
+            </br><center><img src="/files/imagen/bancomun.png"></img></center>
+            <br></br><center><a href="#"><img src="/files/imagen/japon.png"></a></img><a href="#"><img src="/files/imagen/japonconfe.jpg"></a></img></center><br></br>
             <div id="enlacefooter"><center>Desarrollado por <a href="http:///www.simas.org.ni">SIMAS</a> bajo plataforma <a href="http://djangoprojecto.org">Django</a></center></div>
         </div>
         <div id="cuerpo">
-            <div id="panel" style="height:90px !important;">
+            <div id="panel" style="height:72px !important;">
                    </br>
-                   <a href="{% url organizaciones %}"><img class="izq" src="/files/imagen/organizacionboton.jpg"></img></a>
-                   <a href="{% url mis-encuestas %}"><img class="izq" style="margin-left:-8px;"src="/files/imagen/evaluacionboton.jpg"></a>
-                   <a href="{% url resultados %}"><img class="izq" style="margin-left:-8px;"src="/files/imagen/explorarboton.jpg"></img></a>
-                   <a href="/ayuda"><img class="izq"style="margin-left:-8px;" src="/files/imagen/ayudaboton.jpg"></img></a>
+                   <a href="{% url organizaciones %}"><img class="izq" src="/files/imagen/organizaciones.png"></img></a>
+                   <a href="{% url mis-encuestas %}"><img class="izq" style="margin-left:-8px;"src="/files/imagen/evaluaciones.png"></a>
+                   <a href="{% url resultados %}"><img class="izq" style="margin-left:-8px;"src="/files/imagen/explorar.png"></img></a>
+                   <a href="/ayuda"><img class="izq"style="margin-left:-8px;" src="/files/imagen/ayuda.png"></img></a>
                    <div class="separador"></div>
             </div>
             {%block content%}

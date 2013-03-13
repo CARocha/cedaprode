@@ -6,76 +6,64 @@
   {% csrf_token %}
   {{form.errors}}
   {{ form.creado_por }}
-<table>
-<tr>
-    <td>{{ form.nombre.label_tag }}</td>
-</tr>
-<tr>
-    <td>{{ form.nombre }}</td>
-</tr>
-<tr>
-    <td>{{ form.tipo.label_tag }}</td>
-</tr>
-<tr>
-    <td>{{ form.tipo }}</td>
-</tr>
-<tr>
-    <td>{{ form.descripcion.label_tag }}</td>
-</tr>
-<tr>
-    <td>{{ form.descripcion }}</td>
-</tr>
-<tr>
-    <td>{{ form.municipio.label_tag }}</td>
-</tr>
-<tr>
-    <td>{{ form.municipio }}</td>
-</tr>
-<tr>
-    <td>{{ form.representante.label_tag }}</td>
-</tr>
-<tr>
-    <td>{{ form.representante }}</td>
-</tr>
-<tr>
-    <td>{{ form.celular_repre.label_tag }}</td>
-</tr>
-<tr>
-    <td>{{ form.celular_repre }}</td>
-</tr>
-<tr>
-    <td>{{ form.correo_repre.label_tag }}</td>
-</tr>
-<tr>
-    <td>{{ form.correo_repre }}</td>
-</tr>
-<tr>
-    <td>{{ form.gerente.label_tag }}</td>
-</tr>
-<tr>
-    <td>{{ form.gerente }}</td>
-</tr>
-<tr>
-    <td>{{ form.celular_gerente.label_tag }}</td>
-</tr>
-<tr>
-    <td>{{ form.celular_gerente }}</td>
-</tr>
-<tr>
-    <td>{{ form.correo_gerente.label_tag }}</td>
-</tr>
-<tr>
-    <td>{{ form.correo_gerente }}</td>
-</tr>
-<tr>
-    <td>{{ form.fecha_fundacion.label_tag }}</td>
-</tr>
-<tr>
-    <td>{{ form.fecha_fundacion }}</td>
-</tr>
-</table>
-<div id="agregar">
-<p><input type="submit" value=""></p>
+<div class="boxdiv">
+      <span class="textform">{{ form.nombre.label_tag }}</span><br/><br/>
+      {{ form.nombre }}
+  </div>
+
+  <div class="boxdiv">
+      <span class="textform">{{ form.tipo.label_tag }}</span><br/><br/>
+      {{ form.tipo }}
+  </div>
+
+  <div class="boxdiv">
+      <span class="textform">{{ form.descripcion.label_tag }}</span><br/><br/>
+      {{ form.descripcion }}
+  </div>
+
+<div class="boxdiv">
+      <span class="textform">{{ form.municipio.label_tag }}</span><br/><br/>
+       <div class="form-auto">{{ form.municipio }}</div>
+  </div>
+
+
+<div class="boxdiv">
+      <span class="textform">{{ form.representante.label_tag }}</span><br/><br/>
+      {{ form.representante }}
+  </div>
+
+<div class="boxdiv">
+      <span class="textform">{{ form.celular_repre.label_tag }}</span><br/><br/>
+      {{ form.celular_repre }}
+  </div>
+
+<div class="boxdiv">
+      <span class="textform">{{ form.correo_repre.label_tag }}</span><br/><br/>
+      {{ form.correo_repre }}
+  </div>
+
+<div class="boxdiv">
+      <span class="textform">{{ form.gerente.label_tag }}</span><br/><br/>
+      {{ form.gerente }}
+  </div>
+
+  <div class="boxdiv">
+      <span class="textform">{{ form.celular_gerente.label_tag }}</span><br/><br/>
+      {{ form.celular_gerente }}
+  </div>
+
+  <div class="boxdiv">
+      <span class="textform">{{ form.correo_gerente.label_tag }}</span><br/><br/>
+     {{ form.correo_gerente }}
+  </div>
+
+  <div class="boxdiv">
+      <span class="textform">{{ form.fecha_fundacion.label_tag }}</span><br/><br/>
+     {{ form.fecha_fundacion }}
+  </div>
+
+<div id="agregar" class="boton_guardar">
+<p><input type="submit" value="Guardar" ></p>
 </div>
 </form>
 </div>

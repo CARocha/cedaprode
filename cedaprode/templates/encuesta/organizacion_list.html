@@ -2,12 +2,12 @@
 {%block title%}Organizaciones{%endblock%}
 {% block content %}
 <div style="padding:15px;">
-    <h1><a href="{% url crear-organizacion%}"><img class="der" src="/files/imagen/nuev.jpg"></a></h1>
+    <h1><a href="{% url crear-organizacion%}"><div class="boton_new">Nueva</div></a></h1>
 
     <h2 class="left">MIS ORGANIZACIONES</h2>
     <div class="separador"><br></div>
     <div class="tabla">
-    <table>
+    <table class="table table-hover">
         <tr>
            <th>Nombre</th>
            <th>Tipo</th>
