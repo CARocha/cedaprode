@@ -148,8 +148,8 @@ CHOICE_INTEGRADAS_FRECUENCIA = (
 class ExtraInformacion(models.Model):
     encuesta = models.ForeignKey(Encuesta)
     integradas = models.IntegerField(choices=CHOICE_INTEGRADAS, null=True, blank=True)
-    hombres = models.IntegerField(null=True, blank=True)
-    mujeres = models.IntegerField(null=True, blank=True)
+    hombres = models.IntegerField(default=0 ,null=True, blank=True)
+    mujeres = models.IntegerField(default=0, null=True, blank=True)
 
     def __unicode__(self):
         return u'%s hombre - %s mujeres' % (str(self.hombres),str(self.mujeres))
