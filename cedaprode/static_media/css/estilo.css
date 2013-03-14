@@ -184,6 +184,36 @@ label{
     -webkit-border-radius: 5px ;
     -moz-border-radius: 5px ;
 }
+
+#login-home input{
+   
+    /*background:url(/files/imagen/guardar.jpg);*/
+    width:100px;
+    height:25px;
+    margin-top: 5px;
+    margin-left: 5px;
+    float:left; background:#629C46;
+    clear: both;
+    color: #fff;
+    border:#3B7D19 1px solid;
+    border-radius: 5px;
+    -webkit-border-radius: 5px ;
+    -moz-border-radius: 5px ;
+}
+
+#agregar-text input{ /*background:url(/files/imagen/guardar.jpg);*/
+    width:115px;
+    height:25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    float:left; background:#f2b40b;
+    clear: both;
+    color: #fff;
+    border: #E2AC24 1px solid;
+    border-radius: 5px;
+    -webkit-border-radius: 5px ;
+    -moz-border-radius: 5px ;}
 .boton_guardar{   }
 .boton_new { width:125px;
     font-size: 14px;
@@ -225,10 +255,10 @@ label{
     margin-bottom: 5px;
     padding: 8px;
     text-align: center;
-    float:right; background:#D1C3C3;
+    float:right; background:#58A439;
     clear: left;
     color: #fff;
-    border:#A39A9A 1px solid;
+    border:#579030 1px solid;
     border-radius: 5px;
     -webkit-border-radius: 5px ;
     -moz-border-radius: 5px ;}
