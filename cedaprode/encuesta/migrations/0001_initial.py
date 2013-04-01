@@ -90,8 +90,8 @@ class Migration(SchemaMigration):
             ('id', self.gf('django.db.models.fields.AutoField')(primary_key=True)),
             ('encuesta', self.gf('django.db.models.fields.related.ForeignKey')(to=orm['encuesta.Encuesta'])),
             ('integradas', self.gf('django.db.models.fields.IntegerField')(null=True, blank=True)),
-            ('hombres', self.gf('django.db.models.fields.IntegerField')(null=True, blank=True)),
-            ('mujeres', self.gf('django.db.models.fields.IntegerField')(null=True, blank=True)),
+            ('hombres', self.gf('django.db.models.fields.IntegerField')(default=0, null=True, blank=True)),
+            ('mujeres', self.gf('django.db.models.fields.IntegerField')(default=0, null=True, blank=True)),
         ))
         db.send_create_signal('encuesta', ['ExtraInformacion'])
 
@@ -212,10 +212,10 @@ class Migration(SchemaMigration):
         'encuesta.extrainformacion': {
             'Meta': {'object_name': 'ExtraInformacion'},
             'encuesta': ('django.db.models.fields.related.ForeignKey', [], {'to': "orm['encuesta.Encuesta']"}),
-            'hombres': ('django.db.models.fields.IntegerField', [], {'null': 'True', 'blank': 'True'}),
+            'hombres': ('django.db.models.fields.IntegerField', [], {'default': '0', 'null': 'True', 'blank': 'True'}),
             'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
             'integradas': ('django.db.models.fields.IntegerField', [], {'null': 'True', 'blank': 'True'}),
-            'mujeres': ('django.db.models.fields.IntegerField', [], {'null': 'True', 'blank': 'True'})
+            'mujeres': ('django.db.models.fields.IntegerField', [], {'default': '0', 'null': 'True', 'blank': 'True'})
         },
         'encuesta.frecuenciainfo': {
             'Meta': {'object_name': 'FrecuenciaInfo'},
