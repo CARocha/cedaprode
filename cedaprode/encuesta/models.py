@@ -10,7 +10,8 @@ TIPOS_ORG = (
              ('2', 'Sociedad civil'),
              ('3', 'Gremios'), 
              ('4', 'Instituciones del estado'), 
-             ('5', 'Empresa')
+             ('5', 'Empresa'),
+             ('6', 'Cooperativa')
             )
 
 class Organizacion(models.Model):
@@ -38,7 +39,7 @@ class Organizacion(models.Model):
    
 class Encuesta(models.Model):
     organizacion = models.ForeignKey(Organizacion)
-    fecha = models.DateTimeField(auto_now_add = True)
+    fecha = models.DateField()
     usuario = models.ForeignKey(User)
 
     def save(self, *args, **kwargs):
@@ -134,7 +135,8 @@ CHOICE_FRECUENCIA = (
                         (3, "Bimensual"),
                         (4, "Trimestral"),
                         (5, "Semestral"),
-                        (6, "Anual")
+                        (6, "Anual"),
+                        (7, "No sesionan - no tiene información")
                     )
 
 CHOICE_INTEGRADAS_FRECUENCIA = (
@@ -160,8 +162,8 @@ class ExtraInformacion(models.Model):
 class RubrosManejados(models.Model):
     encuesta = models.ForeignKey(Encuesta)
     rubros = models.TextField('Rubros Manejados', null=True, blank=True)
-    volumen_global = models.FloatField(null=True, blank=True)
-    volumen_cacao = models.FloatField(null=True, blank=True)
+    volumen_global = models.FloatField(default=0 ,null=True, blank=True)
+    volumen_cacao = models.FloatField(default=0 ,null=True, blank=True)
 
     def __unicode__(self):
         return u'%s - %s' % (str(self.volumen_global),str(self.volumen_cacao))
