@@ -143,6 +143,7 @@ h2{
 #id_tipo, #id_municipio, #id_organizacion{height: auto;}
 .textform{ text-align: left; padding-right: 10px; float: left;}
 .boxdiv{float: left; padding: 10px;}
+.boxdiv_1{ float: left; padding-right: 90em;}
 .text_hform{ font-size:14px; font-family:Arial;}
 
 #id_pais{width:300px;}
@@ -207,7 +208,7 @@ label{
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 5px;
-    float:left; background:#f2b40b;
+    background:#f2b40b;
     clear: both;
     color: #fff;
     border: #E2AC24 1px solid;
