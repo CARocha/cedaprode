@@ -3,7 +3,7 @@ from django.db import models
 from django.contrib.auth.models import User
 from django.db.models import Sum
 
-from lugar.models import Municipio
+from cedaprode.lugar.models import Municipio
 
 TIPOS_ORG = (
              ('1', 'Alcaldía'), 
