@@ -101,9 +101,9 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     'django.contrib.admindocs',
-    'encuesta',
+    'cedaprode.encuesta',
     'south',
-    'lugar',
+    'cedaprode.lugar',
 )
 
 # A sample logging configuration. The only tangible logging

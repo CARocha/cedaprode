@@ -4,7 +4,7 @@ from django.views.generic import ListView, DetailView
 from django.views.generic.simple import direct_to_template
 from models import Organizacion
 
-urlpatterns = patterns('encuesta.views',
+urlpatterns = patterns('cedaprode.encuesta.views',
             url(r'^mis-encuestas/$', 'mis_encuestas', name='mis-encuestas'),
             url(r'^llenar-encuesta/(?P<encuesta_id>\d+)/$', 'llenar_encuesta', name='llenar-encuesta'),
             url(r'^adjuntar/(?P<encuesta_id>\d+)/$', 'adjuntar', name='adjuntar'),
